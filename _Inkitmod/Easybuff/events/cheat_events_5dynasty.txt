@@ -1,0 +1,69 @@
+﻿namespace = cheateb
+
+cheateb.5000 = {
+	type = character_event
+	title = cheateb.5000.dynasty
+	desc = cheateb.null
+	theme = realm
+	right_portrait = {
+		character = scope:recipient
+		animation = personality_honorable
+	}
+
+	option = {
+		name = strong_blood
+		scope:recipient.dynasty = {
+			if = { 
+				limit = { has_dynasty_modifier = strong_blood }
+				remove_dynasty_modifier = strong_blood
+			}
+			else = {
+				add_dynasty_modifier = strong_blood
+			}
+		}
+		scope:actor = {
+			trigger_event = cheateb.5000
+		}
+	}
+
+	option = {
+		name = cheateb_stat7_modifier
+		scope:recipient = {
+			if = { 
+				limit = { has_dynasty_modifier = cheateb_stat7_modifier }
+				remove_dynasty_modifier = cheateb_stat7_modifier
+			}
+			else = {
+				add_dynasty_modifier = cheateb_stat7_modifier
+			}
+		}
+		scope:actor = {
+			trigger_event = cheateb.5000
+		}
+	}
+
+	option = {
+		name = cheateb_niverdie_modifier
+		scope:recipient.dynasty = {
+			if = { 
+				limit = { has_dynasty_modifier = cheateb_niverdie_modifier }
+				remove_dynasty_modifier = cheateb_niverdie_modifier
+			}
+			else = {
+				add_dynasty_modifier = cheateb_niverdie_modifier
+			}
+		}
+		scope:actor = {
+			trigger_event = cheateb.5000
+		}
+	}
+
+	
+
+	option = {
+		name = cheateb.return
+		scope:actor = {
+			trigger_event = cheateb.0010
+		}
+	}
+}

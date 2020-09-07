@@ -1,0 +1,45 @@
+﻿l_simp_chinese:
+ cheateb.return:0 "返回"
+ cheateb.exit:0 "关闭"
+ cheateb.null:0 ""
+
+ cheateb.plus10:0 "+10"
+ cheateb.plus5:0 "+5"
+ cheateb.minus5:0 "-5"
+ cheateb.minus10:0 "-10"
+
+ cheateb.diplomacy:0 "外交"
+ cheateb.martial:0 "军事"
+ cheateb.stewardship:0 "管理"
+ cheateb.intrigue:0 "谋略"
+ cheateb.learning:0 "知识"
+ cheateb.prowess:0 "武勇"
+ cheateb.all:0 "全部"
+
+ cheateb.0010.mainmenu:0 "主菜单"
+ cheateb.1000.statmod:0 "属性调整"
+ cheateb.2000.trait:0 "特性调整"
+ cheateb.3000.modifier:0 "个人调整因素"
+ cheateb.4000.lifestyle:0 "生活方式调整"
+ cheateb.5000.dynasty:0 "宗族调整因素"
+ cheateb.6000.county:0 "领地调整因素及政体"
+
+ cheateb.2000.trait.stress:0 "减压"
+ cheateb.2000.trait.education:0 "教育特性"
+ cheateb.2000.trait.education.remove:0 "移除教育特性"
+ cheateb.2000.trait.talent:0 "天赋"
+ cheateb.2000.trait.talent.removeneg:0 "移除负面天赋"
+ cheateb.2000.trait.talent.removepos:0 "移除正面天赋"
+ cheateb.2000.trait.disease:0 "治疗疾病"
+ cheateb.2000.trait.negtrait:0 "移除负面性格"
+
+ cheateb.4000.lifestyle.diplomacy:0 "外交"
+ cheateb.4000.lifestyle.martial:0 "军事"
+ cheateb.4000.lifestyle.stewardship:0 "管理"
+ cheateb.4000.lifestyle.intrigue:0 "谋略"
+ cheateb.4000.lifestyle.learning:0 "知识"
+ 
+ cheateb.6001.countychangemode:0 "修改政体"
+
+ cheateb.6002.spawnchar:0 "生成人物"
+ spawn_female:0 "女性人物"

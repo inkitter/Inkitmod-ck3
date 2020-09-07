@@ -1,0 +1,292 @@
+﻿cheateb_claim_interaction = {
+	category = cheateb_interaction_menu_relation
+	use_diplomatic_range = no
+	auto_accept = yes
+	ai_will_do = 0
+	
+	is_shown = {
+		NOT = { scope:actor = scope:recipient }
+	}
+	
+	on_accept = {
+		scope:actor = {
+			if = {
+				limit = { has_character_flag = cheateb_targeted }
+				random_living_character = {
+					limit = { has_character_flag = cheateb_target }
+					save_scope_as = cheateb_targetscope
+				}
+			}
+			else = { save_scope_as = cheateb_targetscope }
+		}
+		scope:recipient = {
+			every_held_title = {
+				scope:cheateb_targetscope = {
+					make_claim_strong = prev
+				}
+			}
+		}
+	}
+}
+
+cheateb_take_alltitle_interaction = {
+	category = cheateb_interaction_menu_relation
+	use_diplomatic_range = no
+	auto_accept = yes
+	ai_will_do = 0
+	
+	is_shown = {
+		NOT = { scope:actor = scope:recipient }
+	}
+	
+	on_accept = {
+		create_title_and_vassal_change = change
+		scope:change = {
+			set_title_and_vassal_change_type = conquest
+		}
+		scope:actor = {
+			if = {
+				limit = { has_character_flag = cheateb_targeted }
+				random_living_character = {
+					limit = { has_character_flag = cheateb_target }
+					save_scope_as = cheateb_targetscope
+				}
+			}
+			else = { save_scope_as = cheateb_targetscope }
+		}
+		scope:recipient = {
+				every_held_title = {
+					change_title_holder = {
+						holder = scope:cheateb_targetscope
+						change = scope:change
+					}
+				}
+		}
+		resolve_title_and_vassal_change = scope:change
+	}
+}
+
+cheateb_take_title_interaction = {
+	category = cheateb_interaction_menu_relation
+	use_diplomatic_range = no
+	auto_accept = yes
+	ai_will_do = 0
+	
+	is_shown = {
+		NOT = { scope:actor = scope:recipient }
+	}
+
+	on_accept = { 
+		create_title_and_vassal_change = change
+		scope:change = {
+			set_title_and_vassal_change_type = conquest
+		}
+
+		scope:actor = {
+			if = {
+				limit = { has_character_flag = cheateb_targeted }
+				random_living_character = {
+					limit = { has_character_flag = cheateb_target }
+					save_scope_as = cheateb_targetscope
+				}
+			}
+			else = { save_scope_as = cheateb_targetscope }
+		}
+		scope:recipient.primary_title = {
+			change_title_holder = {
+				holder = scope:cheateb_targetscope
+				change = scope:change
+			}
+		}
+		resolve_title_and_vassal_change = scope:change
+	}
+}
+
+cheateb_religion_interaction = {
+	category = cheateb_interaction_menu_relation
+	use_diplomatic_range = no
+	auto_accept = yes
+	ai_will_do = 0
+	
+	is_shown = {
+		NOT = { scope:actor = scope:recipient }
+	}
+	
+	on_accept = {
+		scope:actor = {
+			if = {
+				limit = { has_character_flag = cheateb_targeted }
+				random_living_character = {
+					limit = { has_character_flag = cheateb_target }
+					save_scope_as = cheateb_targetscope
+				}
+			}
+			else = { save_scope_as = cheateb_targetscope }
+		}
+		scope:recipient = {
+			set_character_faith = scope:cheateb_targetscope.faith
+		}
+	}
+}
+
+cheateb_culture_interaction = {
+	category = cheateb_interaction_menu_relation
+	use_diplomatic_range = no
+	auto_accept = yes
+	ai_will_do = 0
+	
+	is_shown = {
+		NOT = { scope:actor = scope:recipient }
+		NOT = { scope:actor.culture = scope:recipient.culture }
+	}
+	
+	on_accept = {
+		scope:actor = {
+			if = {
+				limit = { has_character_flag = cheateb_targeted }
+				random_living_character = {
+					limit = { has_character_flag = cheateb_target }
+					save_scope_as = cheateb_targetscope
+				}
+			}
+			else = { save_scope_as = cheateb_targetscope }
+		}
+		scope:recipient = {
+			set_culture = scope:cheateb_targetscope.culture
+		}
+	}
+}
+
+cheateb_kill_interaction = {
+	category = cheateb_interaction_menu_relation
+	use_diplomatic_range = no
+	auto_accept = yes
+	ai_will_do = 0
+	
+	is_shown = {
+		scope:recipient = { is_alive = yes }
+	}
+	
+	on_accept = {
+		scope:recipient = {
+			death = { death_reason = death_mysterious }
+		}
+	}
+}
+
+cheateb_imprison_interaction = {
+	category = cheateb_interaction_menu_relation
+	use_diplomatic_range = no
+	auto_accept = yes
+	ai_will_do = 0
+	
+	is_shown = {
+		scope:recipient = { is_alive = yes }
+		NOT = { scope:recipient = scope:actor }
+	}
+	
+	on_accept = {
+		scope:actor = {
+			if = {
+				limit = { has_character_flag = cheateb_targeted }
+				random_living_character = {
+					limit = { has_character_flag = cheateb_target }
+					save_scope_as = cheateb_targetscope
+				}
+			}
+			else = { save_scope_as = cheateb_targetscope }
+		}
+		scope:cheateb_targetscope = {
+			imprison = {
+				target = scope:recipient
+				type = dungeon
+			}
+		}
+	}
+}
+
+cheateb_marry_interaction = {
+	category = cheateb_interaction_menu_relation
+	use_diplomatic_range = no
+	auto_accept = yes
+	ai_will_do = 0
+
+	is_shown = {
+		NOT = { scope:recipient = scope:actor }
+	}
+
+	on_accept = {
+		scope:actor = {
+			if = {
+				limit = { has_character_flag = cheateb_targeted }
+				random_living_character = {
+					limit = { has_character_flag = cheateb_target }
+					save_scope_as = cheateb_targetscope
+				}
+			}
+			else = { save_scope_as = cheateb_targetscope }
+		}
+		scope:cheateb_targetscope = {		
+			marry = scope:recipient
+		}
+	}
+}
+
+cheateb_hook_interaction = {
+	category = cheateb_interaction_menu_relation
+	use_diplomatic_range = no
+	auto_accept = yes
+	ai_will_do = 0
+	
+	is_shown = {
+		NOT = { scope:actor = scope:recipient }
+	}
+	
+	on_accept = {
+		scope:actor = {
+			if = {
+				limit = { has_character_flag = cheateb_targeted }
+				random_living_character = {
+					limit = { has_character_flag = cheateb_target }
+					save_scope_as = cheateb_targetscope
+				}
+			}
+			else = { save_scope_as = cheateb_targetscope }
+		}
+		scope:cheateb_targetscope = {
+			add_hook = {
+				target = scope:recipient
+				type = loyalty_hook
+			}
+		}
+	}
+}
+
+cheateb_befriend_interaction = {
+	category = cheateb_interaction_menu_relation
+	use_diplomatic_range = no
+	common_interaction = yes
+	auto_accept = yes
+	ai_will_do = 0
+
+	is_shown = {
+		NOT = { scope:recipient = scope:actor }
+	}
+
+	on_accept = {
+		scope:actor = {
+			if = {
+				limit = { has_character_flag = cheateb_targeted }
+				random_living_character = {
+					limit = { has_character_flag = cheateb_target }
+					save_scope_as = cheateb_targetscope
+				}
+			}
+			else = { save_scope_as = cheateb_targetscope }
+		}
+		scope:cheateb_targetscope = {		
+			set_relation_friend = scope:recipient
+		}
+	}
+}
+

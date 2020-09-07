@@ -1,0 +1,205 @@
+﻿namespace = cheateb
+
+cheateb.6000 = {
+	type = character_event
+	title = cheateb.6000.county
+	desc = cheateb.null
+	theme = realm
+	right_portrait = {
+		character = scope:recipient
+		animation = personality_honorable
+	}
+
+	option = {
+		name = strong_blood
+		trigger = { scope:recipient = scope:actor }
+		scope:recipient = {
+			if = { 
+				limit = { has_county_modifier = strong_blood }
+				remove_county_modifier = strong_blood
+			}
+			else = {
+				add_county_modifier = strong_blood
+			}
+		}
+		scope:actor = {
+			trigger_event = cheateb.6000
+		}
+	}
+
+	option = {
+		name = cheateb_niverdie_modifier
+		trigger = { scope:recipient = scope:actor }
+		scope:recipient = {
+			if = { 
+				limit = { has_county_modifier = cheateb_niverdie_modifier }
+				remove_county_modifier = cheateb_niverdie_modifier
+			}
+			else = {
+				add_county_modifier = cheateb_niverdie_modifier
+			}
+		}
+		scope:actor = {
+			trigger_event = cheateb.6000
+		}
+	}
+
+	option = {
+		name = cheateb_development_modifier
+		scope:recipient = {
+			if = { 
+				limit = { has_county_modifier = cheateb_development_modifier }
+				remove_county_modifier = cheateb_development_modifier
+			}
+			else = {
+				add_county_modifier = cheateb_development_modifier
+			}
+		}
+		scope:actor = {
+			trigger_event = cheateb.6000
+		}
+	}
+
+	option = {
+		name = cheateb.6001.countychangemode
+		scope:actor = {
+			trigger_event = cheateb.6001
+		}
+	}
+
+	option = {
+		name = cheateb.6002.spawnchar
+		scope:actor = {
+			trigger_event = cheateb.6002
+		}
+	}
+
+	option = {
+		name = cheateb.return
+		scope:actor = {
+			trigger_event = cheateb.0010
+		}
+	}
+}
+
+cheateb.6001 = {
+	type = character_event
+	title = cheateb.6001.countychangemode
+	desc = cheateb.null
+	theme = realm
+	right_portrait = {
+		character = scope:recipient
+		animation = personality_honorable
+	}
+
+	option = {
+		name = feudal_government
+		scope:recipient = {
+			change_government = feudal_government
+		}
+		scope:actor = {
+			trigger_event = cheateb.6001
+		}
+	}
+	option = {
+		name = clan_government
+		scope:recipient = {
+			change_government = clan_government
+		}
+		scope:actor = {
+			trigger_event = cheateb.6001
+		}
+	}
+	option = {
+		name = tribal_government
+		scope:recipient = {
+			change_government = tribal_government
+		}
+		scope:actor = {
+			trigger_event = cheateb.6001
+		}
+	}
+	# option = {
+	# 	name = republic_government
+	# 	scope:recipient = {
+	# 		change_government = republic_government
+	# 	}
+	# 	scope:actor = {
+	# 		trigger_event = cheateb.6001
+	# 	}
+	# }
+	# option = {
+	# 	name = mercenary_government
+	# 	scope:recipient = {
+	# 		change_government = mercenary_government
+	# 	}
+	# 	scope:actor = {
+	# 		trigger_event = cheateb.6001
+	# 	}
+	# }
+	# option = {
+	# 	name = theocracy_government
+	# 	scope:recipient = {
+	# 		change_government = theocracy_government
+	# 	}
+	# 	scope:actor = {
+	# 		trigger_event = cheateb.6001
+	# 	}
+	# }
+
+	option = {
+		name = cheateb.return
+		scope:actor = {
+			trigger_event = cheateb.6000
+		}
+	}
+}
+
+cheateb.6002 = {
+	type = character_event
+	title = cheateb.6002.spawnchar
+	desc = cheateb.null
+	theme = realm
+	right_portrait = {
+		character = scope:recipient
+		animation = personality_honorable
+	}
+
+	option = {
+		name = spawn_female
+		scope:recipient = {
+			create_character = {
+			age = 20
+			gender = female
+			trait = education_martial_4
+			trait = content
+			trait = beauty_good_2
+			trait = intellect_good_2
+			trait = physique_good_2
+			health = 10
+			fertility = 8
+			employer = root
+			faith = root.faith
+			culture = root.culture
+			dynasty = generate
+			martial = 20
+			prowess = 20
+			diplomacy = 20
+			stewardship = 20
+			intrigue = 20
+			learning = 20
+		}
+		}
+		scope:actor = {
+			trigger_event = cheateb.6002
+		}
+	}
+
+
+	option = {
+		name = cheateb.return
+		scope:actor = {
+			trigger_event = cheateb.6000
+		}
+	}
+}

@@ -1,0 +1,7 @@
+﻿cheateb_interaction_menu = {
+	index = 8
+}
+
+cheateb_interaction_menu_relation = {
+	index = 9
+}

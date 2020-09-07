@@ -1,0 +1,66 @@
+﻿cheateb_editmenu_interaction = {
+	category = cheateb_interaction_menu
+	common_interaction = yes
+	use_diplomatic_range = no
+	auto_accept = yes
+	ai_will_do = 0
+	
+	on_accept = {
+		scope:actor = {
+			trigger_event = cheateb.0010
+		}
+	}
+	
+}
+
+cheateb_settarget_interaction = {
+	category = cheateb_interaction_menu
+	common_interaction = yes
+	use_diplomatic_range = no
+	auto_accept = yes
+	ai_will_do = 0
+	
+	on_accept = {
+		every_living_character = {
+			if = { 
+				limit = { has_character_flag = cheateb_target }
+				remove_character_flag = cheateb_target
+			}
+		}
+		scope:recipient = {
+			add_character_flag = cheateb_target
+		}
+		scope:actor = {
+			if = { 
+				limit = { NOT = { has_character_flag = cheateb_targeted } }
+				add_character_flag = cheateb_targeted
+			}
+		}
+	}
+}
+
+cheateb_removetarget_interaction = {
+	category = cheateb_interaction_menu
+	use_diplomatic_range = no
+	auto_accept = yes
+	ai_will_do = 0
+
+	is_shown = {
+		scope:actor = {
+			has_character_flag = cheateb_targeted
+		}
+	}
+	
+	on_accept = {
+		every_living_character = {
+			if = { 
+				limit = { has_character_flag = cheateb_target }
+				remove_character_flag = cheateb_target
+			}
+		}
+		scope:actor = {
+			remove_character_flag = cheateb_targeted
+		}
+	}
+	
+}

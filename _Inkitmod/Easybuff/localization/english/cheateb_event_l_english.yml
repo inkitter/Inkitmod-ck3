@@ -1,0 +1,45 @@
+﻿l_english:
+ cheateb.return:0 "Return"
+ cheateb.exit:0 "Close"
+ cheateb.null:0 ""
+
+ cheateb.plus10:0 "+10"
+ cheateb.plus5:0 "+5"
+ cheateb.minus5:0 "-5"
+ cheateb.minus10:0 "-10"
+
+ cheateb.diplomacy:0 "Diplomacy"
+ cheateb.martial:0 "Martial"
+ cheateb.stewardship:0 "Stewardship"
+ cheateb.intrigue:0 "Intrigue"
+ cheateb.learning:0 "Learning"
+ cheateb.prowess:0 "Prowess"
+ cheateb.all:0 "All"
+
+ cheateb.0010.mainmenu:0 "Main Menu"
+ cheateb.1000.statmod:0 "Stats Mod"
+ cheateb.2000.trait:0 "Trait Mod"
+ cheateb.3000.modifier:0 "Char Modifiers"
+ cheateb.4000.lifestyle:0 "Lifestyle Points"
+ cheateb.5000.dynasty:0 "Dynasty Modifiers"
+ cheateb.6000.county:0 "County Modifiers and Polity"
+
+ cheateb.2000.trait.stress:0 "Reduce Stress"
+ cheateb.2000.trait.education:0 "Education Trait"
+ cheateb.2000.trait.education.remove:0 "Remove Education Trait"
+ cheateb.2000.trait.talent:0 "Talent Trait"
+ cheateb.2000.trait.talent.removeneg:0 "Remove Negative Talent Trait"
+ cheateb.2000.trait.talent.removepos:0 "Remove Positive Talent Trait"
+ cheateb.2000.trait.disease:0 "Remove Disease"
+ cheateb.2000.trait.negtrait:0 "Remove Negative Personality"
+
+ cheateb.4000.lifestyle.diplomacy:0 "Diplomacy"
+ cheateb.4000.lifestyle.martial:0 "Martial"
+ cheateb.4000.lifestyle.stewardship:0 "Stewardship"
+ cheateb.4000.lifestyle.intrigue:0 "Intrigue"
+ cheateb.4000.lifestyle.learning:0 "Learning"
+ 
+ cheateb.6001.countychangemode:0 "Change Polity"
+
+ cheateb.6002.spawnchar:0 "Spawn Char"
+ spawn_female:0 "Female"

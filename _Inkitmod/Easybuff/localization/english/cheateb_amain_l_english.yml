@@ -1,0 +1,51 @@
+﻿l_english:
+# \character_interaction_categories
+ cheateb_interaction_menu:0 "Easybuff Main"
+ cheateb_interaction_menu_relation:0 "Easybuff Relations"
+
+
+# \character_interactions
+## 0
+ cheateb_settarget_interaction:0 "@advantage_icon! #P SET#! Target(As Actor)"
+ cheateb_removetarget_interaction:0 "@cross_icon! #N REMOVE#! Target(Exists)"
+
+## 1
+ cheateb_gold_interaction:0 "@gold_icon! Coin"
+ cheateb_prestige_interaction:0 "@prestige_icon! Prestige"
+ cheateb_piety_interaction:0 "[GetLocalPlayerPietyTextIcon] Piety"
+ cheateb_dyprestige_interaction:0 "@dynasty_prestige_icon! Dynasty Prestige"
+
+## 2
+ cheateb_claim_interaction:0 "@pressed_claim! #P Claim#! Title"
+ cheateb_take_alltitle_interaction:0 "@prestige_icon! #N Take#! All Title "
+ cheateb_take_title_interaction:0 "@prestige_icon! #N Take#!Main Title"
+ cheateb_religion_interaction:0 "@piety_icon! #P Change#! Religion"
+ cheateb_culture_interaction:0 "@skill_learning_icon! #P Change#! Culture"
+ cheateb_kill_interaction:0 "@scheme_icon! #N Kill#!"
+ cheateb_imprison_interaction:0 "@crime_icon! #X Impriso#!"
+ cheateb_marry_interaction:0 "@arrange_marriage_icon! #P Marry#!"
+ cheateb_hook_interaction:0 "@weak_hook_icon! Strong Hook"
+ cheateb_hook_reason:0 "EB Hook "
+ cheateb_befriend_interaction:0 "@alliance_icon! #P Befriend#!"
+
+## 3
+ cheateb_editmenu_interaction:0 "@warning_icon! Detailed Menu"
+
+## 4
+
+
+# \modifiers
+ cheateb_keep_modifier:0 "Bakup modifier"
+
+ cheateb_stat7_modifier:0 "Excellent"
+ cheateb_stat20_modifier:0 "Perfect"
+ cheateb_niverdie_modifier:0 "Immortal"
+ cheateb_army_modifier:0 "Army Training"
+ cheateb_development_modifier:0 "Advanced Productivity"
+ cheateb_nofertility_modifier:0 "No Fertility"
+ cheateb_fullfertility_modifier:0 "Full Fertility"
+ cheateb_defence_modifier:0 "Maginot"
+
+# \religion
+ holy_site_ganzhou_effect_name:0 "EB Religion"
+ holy_site_ganzhou_name:0 "GanZhou"

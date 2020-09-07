@@ -1,0 +1,8 @@
+﻿ganzhou = {
+	county = c_ganzhou
+
+	character_modifier = {
+		name = holy_site_ganzhou_effect_name
+		prowess = 5
+	}
+}

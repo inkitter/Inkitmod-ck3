@@ -1,0 +1,52 @@
+﻿l_english:
+# \character_interaction_categories
+ cheateb_interaction_menu:0 "Easybuff Main"
+ cheateb_interaction_menu_relation:0 "Easybuff Relations"
+
+
+# \character_interactions
+## 0
+ cheateb_editmenu_interaction:0 "@warning_icon! 详细修改菜单"
+ cheateb_settarget_interaction:0 "@advantage_icon! #P 设置#!目标(受益者)"
+ cheateb_removetarget_interaction:0 "@cross_icon! #N 移除#!目标(已设置目标)"
+
+## 1
+ cheateb_gold_interaction:0 "@gold_icon! 金币"
+ cheateb_prestige_interaction:0 "@prestige_icon! 威望"
+ cheateb_piety_interaction:0 "[GetLocalPlayerPietyTextIcon] 虔诚"
+ cheateb_dyprestige_interaction:0 "@dynasty_prestige_icon! 家族威望"
+
+## 2
+ cheateb_claim_interaction:0 "@pressed_claim! #P 宣称#!头衔"
+ cheateb_take_alltitle_interaction:0 "@prestige_icon! #N 夺取#!全部头衔"
+ cheateb_take_title_interaction:0 "@prestige_icon! #N 夺取#!头衔"
+ cheateb_religion_interaction:0 "@piety_icon! #P 改变#!宗教"
+ cheateb_culture_interaction:0 "@skill_learning_icon! #P 改变#!文化"
+ cheateb_kill_interaction:0 "@scheme_icon! #N 杀死#!角色"
+ cheateb_imprison_interaction:0 "@crime_icon! #X 囚禁#!角色"
+ cheateb_marry_interaction:0 "@arrange_marriage_icon! #P 结婚#!"
+ cheateb_hook_interaction:0 "@weak_hook_icon! 强牵制"
+ cheateb_hook_reason:0 "EB牵制"
+ cheateb_befriend_interaction:0 "@alliance_icon! #P 交友#!"
+
+## 3
+ 
+
+## 4
+
+
+# \modifiers
+ cheateb_keep_modifier:0 "备份modifier"
+
+ cheateb_stat7_modifier:0 "优秀"
+ cheateb_stat20_modifier:0 "完美"
+ cheateb_niverdie_modifier:0 "永生"
+ cheateb_army_modifier:0 "军队训练"
+ cheateb_development_modifier:0 "先进生产力"
+ cheateb_nofertility_modifier:0 "绝育"
+ cheateb_fullfertility_modifier:0 "壁咚"
+ cheateb_defence_modifier:0 "壁垒"
+
+# \religion
+ holy_site_ganzhou_effect_name:0 "武力训练"
+ holy_site_ganzhou_name:0 "甘州"

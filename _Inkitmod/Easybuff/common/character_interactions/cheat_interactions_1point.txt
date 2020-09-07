@@ -1,0 +1,55 @@
+﻿cheateb_gold_interaction = {
+	category = cheateb_interaction_menu
+	use_diplomatic_range = no
+	auto_accept = yes
+	ai_will_do = 0
+	
+	on_accept = {
+		scope:recipient = {
+			add_gold = 1000
+		}
+	}
+	
+}
+
+cheateb_prestige_interaction = {
+	category = cheateb_interaction_menu
+	use_diplomatic_range = no
+	auto_accept = yes
+	ai_will_do = 0
+	
+	on_accept = {
+		scope:recipient = {
+			add_prestige = 1000
+		}
+	}
+	
+}
+
+cheateb_piety_interaction = {
+	category = cheateb_interaction_menu
+	use_diplomatic_range = no
+	auto_accept = yes
+	ai_will_do = 0
+	
+	on_accept = {
+		scope:recipient = {
+			add_piety = 1000
+		}
+	}
+	
+}
+
+cheateb_dyprestige_interaction = {
+	category = cheateb_interaction_menu
+	use_diplomatic_range = no
+	auto_accept = yes
+	ai_will_do = 0
+	
+	on_accept = {
+		scope:recipient.dynasty = {
+			add_dynasty_prestige = 5000
+		}
+	}
+	
+}

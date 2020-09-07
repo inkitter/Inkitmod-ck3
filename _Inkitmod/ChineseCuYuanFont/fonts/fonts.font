@@ -1,0 +1,162 @@
+### Open Sans
+fontfiles = {
+	name = "OpenSans-SemiBold"
+	always_load = yes
+
+	group = {
+		languages = { "l_english" "l_simp_chinese" }
+		files = {"fonts/mapfont/cuyuan.ttf"}
+	}
+}
+
+fontfiles = {
+	name = "OpenSans-SemiBoldItalic"
+	always_load = yes
+
+	group = {
+		languages = { "l_english" "l_simp_chinese" }
+		files = {"fonts/mapfont/cuyuan.ttf"}
+	}
+}
+
+fontfiles = {
+	name = "OpenSansCondensed-Bold"
+	always_load = yes
+
+	group = {
+		languages = { "l_english" "l_simp_chinese" }
+		files = {"fonts/mapfont/cuyuan.ttf"}
+	}
+}
+
+### Gitan
+fontfiles = {
+	name = "Gitan-Regular"
+	always_load = yes
+
+	group = {
+		languages = { "l_english" "l_simp_chinese" }
+		files = {"fonts/mapfont/cuyuan.ttf"}
+	}
+}
+
+fontfiles = {
+	name = "Gitan-Bold"
+	always_load = yes
+
+	group = {
+		languages = { "l_english" "l_simp_chinese" }
+		files = {"fonts/mapfont/cuyuan.ttf"}
+	}
+}
+
+fontfiles = {
+	name = "Gitan-Italic"
+	always_load = yes
+
+	group = {
+		languages = { "l_english" "l_simp_chinese" }
+		files = {"fonts/mapfont/cuyuan.ttf"}
+	}
+
+}
+
+fontfiles = {
+	name = "Gitan-Bold-Italic"
+	always_load = yes
+
+	group = {
+		languages = { "l_english" "l_simp_chinese" }
+		files = {"fonts/mapfont/cuyuan.ttf"}
+	}
+}
+
+### Fondamento
+fontfiles = {
+	name = "Fondamento-Regular"
+	always_load = yes
+
+	group = {
+		languages = { "l_english" "l_simp_chinese" }
+		files = {"fonts/mapfont/cuyuan.ttf"}
+	}
+}
+
+### Paradox Kings Script // Missale Lunea custom
+fontfiles = {
+	name = "Paradox_King_Script"
+	always_load = yes
+
+	group = {
+		languages = { "l_english" "l_simp_chinese" }
+		files = { "fonts/mapfont/cuyuan.ttf" }
+	}
+}
+
+#######################################################################
+#######################################################################
+#######################################################################
+
+# Each font should specify what it is used for.
+# Name fonts after intented usage, not after source file names.
+
+font = {
+	name = "Debug"
+
+	fontstyle = {
+		style = regular
+		fontfiles = "OpenSans-SemiBold"
+	}
+}
+
+## Font used in-game
+font = {
+	name = "StandardGameFont"
+
+	fontstyle = {
+		style = regular
+		fontfiles = "Gitan-Regular"
+	}
+
+	fontstyle = {
+		style = bold
+		fontfiles = "Gitan-Bold"
+	}
+
+	fontstyle = {
+		style = italic
+		fontfiles = "Gitan-Italic"
+	}
+
+	fontstyle = {
+		style = bold|italic
+		fontfiles = "Gitan-Bold-Italic"
+	}
+
+	underlineformats = {
+		default = {
+			thickness = 1
+			offset = 0.12
+		}
+	}
+}
+
+# Title font
+font = {
+	name = "TitleFont"
+
+	fontstyle = {
+		style = regular
+		fontfiles = "Fondamento-Regular"
+	}
+}
+
+# For map names
+font = {
+	name = "MapFont"
+
+	fontstyle = {
+		style = regular
+		fontfiles = "Paradox_King_Script"
+	}
+}
