@@ -6,6 +6,7 @@
 
 # \character_interactions
 ## 0
+ cheateb_editmenu_interaction:0 "@warning_icon! Detailed Menu"
  cheateb_settarget_interaction:0 "@advantage_icon! #P SET#! Target(As Actor)"
  cheateb_removetarget_interaction:0 "@cross_icon! #N REMOVE#! Target(Exists)"
 
@@ -24,15 +25,10 @@
  cheateb_kill_interaction:0 "@scheme_icon! #N Kill#!"
  cheateb_imprison_interaction:0 "@crime_icon! #X Impriso#!"
  cheateb_marry_interaction:0 "@arrange_marriage_icon! #P Marry#!"
+ cheateb_pregnant_interaction:0 "@arrange_marriage_icon! #X Pregnant#!"
  cheateb_hook_interaction:0 "@weak_hook_icon! Strong Hook"
  cheateb_hook_reason:0 "EB Hook "
  cheateb_befriend_interaction:0 "@alliance_icon! #P Befriend#!"
-
-## 3
- cheateb_editmenu_interaction:0 "@warning_icon! Detailed Menu"
-
-## 4
-
 
 # \modifiers
  cheateb_keep_modifier:0 "Bakup modifier"

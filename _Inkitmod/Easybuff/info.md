@@ -17,6 +17,8 @@
 
 You can try the font if you like it. https://steamcommunity.com/sharedfiles/filedetails/?id=2222147790
 
+Github: https://github.com/inkitter/Inkitmod-ck3/tree/master/_Inkitmod/Easybuff
+
 Below for Chinese
 ==============
 [h1]这是一个修改器，右键点击人物可以看到菜单。[/h1]

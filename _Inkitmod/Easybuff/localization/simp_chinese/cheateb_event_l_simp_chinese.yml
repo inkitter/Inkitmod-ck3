@@ -1,6 +1,8 @@
 ﻿l_simp_chinese:
  cheateb.return:0 "返回"
  cheateb.exit:0 "关闭"
+ cheateb.nextpage:0 "下一页"
+ cheateb.prevpage:0 "上一页"
  cheateb.null:0 ""
 
  cheateb.plus10:0 "+10"
@@ -23,6 +25,7 @@
  cheateb.4000.lifestyle:0 "生活方式调整"
  cheateb.5000.dynasty:0 "宗族调整因素"
  cheateb.6000.county:0 "领地调整因素及政体"
+ cheateb.7000.culture:0 "文化修改"
 
  cheateb.2000.trait.stress:0 "减压"
  cheateb.2000.trait.education:0 "教育特性"
@@ -42,4 +45,11 @@
  cheateb.6001.countychangemode:0 "修改政体"
 
  cheateb.6002.spawnchar:0 "生成人物"
- spawn_female:0 "女性人物"
+ cheateb.6002.spawn_female:0 "女性"
+ cheateb.6002.spawn_male:0 "男性"
+
+ cheateb.7001.maa:0 "文化兵种"
+ cheateb.7010.tribal:0 "部落时代"
+ cheateb.7020.early:0 "早期"
+ cheateb.7030.high:0 "中期"
+ cheateb.7040.late:0 "晚期"

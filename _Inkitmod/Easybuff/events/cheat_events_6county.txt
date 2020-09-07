@@ -166,29 +166,48 @@ cheateb.6002 = {
 	}
 
 	option = {
-		name = spawn_female
+		name = cheateb.6002.spawn_female
 		scope:recipient = {
 			create_character = {
-			age = 20
-			gender = female
-			trait = education_martial_4
-			trait = content
-			trait = beauty_good_2
-			trait = intellect_good_2
-			trait = physique_good_2
-			health = 10
-			fertility = 8
-			employer = root
-			faith = root.faith
-			culture = root.culture
-			dynasty = generate
-			martial = 20
-			prowess = 20
-			diplomacy = 20
-			stewardship = 20
-			intrigue = 20
-			learning = 20
+				age = 20
+				gender = female
+				health = 10
+				fertility = 8
+				employer = scope:recipient
+				faith = scope:recipient.faith
+				culture = scope:recipient.culture
+				dynasty = generate
+				martial = 20
+				prowess = 20
+				diplomacy = 20
+				stewardship = 20
+				intrigue = 20
+				learning = 20
+			}
 		}
+		scope:actor = {
+			trigger_event = cheateb.6002
+		}
+	}
+	option = {
+		name = cheateb.6002.spawn_male
+		scope:recipient = {
+			create_character = {
+				age = 20
+				gender = male
+				health = 10
+				fertility = 8
+				employer = scope:recipient
+				faith = scope:recipient.faith
+				culture = scope:recipient.culture
+				dynasty = generate
+				martial = 20
+				prowess = 20
+				diplomacy = 20
+				stewardship = 20
+				intrigue = 20
+				learning = 20
+			}
 		}
 		scope:actor = {
 			trigger_event = cheateb.6002

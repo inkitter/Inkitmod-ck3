@@ -232,6 +232,33 @@ cheateb_marry_interaction = {
 	}
 }
 
+cheateb_pregnant_interaction = {
+	category = cheateb_interaction_menu_relation
+	use_diplomatic_range = no
+	auto_accept = yes
+	ai_will_do = 0
+
+	is_shown = {
+		NOT = { scope:recipient = scope:actor }
+	}
+
+	on_accept = {
+		scope:actor = {
+			if = {
+				limit = { has_character_flag = cheateb_targeted }
+				random_living_character = {
+					limit = { has_character_flag = cheateb_target }
+					save_scope_as = cheateb_targetscope
+				}
+			}
+			else = { save_scope_as = cheateb_targetscope }
+		}
+		scope:recipient = {		
+			make_pregnant = { father = scope:cheateb_targetscope }
+		}
+	}
+}
+
 cheateb_hook_interaction = {
 	category = cheateb_interaction_menu_relation
 	use_diplomatic_range = no

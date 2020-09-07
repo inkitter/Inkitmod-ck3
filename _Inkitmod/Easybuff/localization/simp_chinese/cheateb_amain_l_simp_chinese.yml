@@ -1,4 +1,4 @@
-﻿l_english:
+﻿l_simp_chinese:
 # \character_interaction_categories
  cheateb_interaction_menu:0 "Easybuff Main"
  cheateb_interaction_menu_relation:0 "Easybuff Relations"
@@ -25,15 +25,10 @@
  cheateb_kill_interaction:0 "@scheme_icon! #N 杀死#!角色"
  cheateb_imprison_interaction:0 "@crime_icon! #X 囚禁#!角色"
  cheateb_marry_interaction:0 "@arrange_marriage_icon! #P 结婚#!"
+ cheateb_pregnant_interaction:0 "@arrange_marriage_icon! #X 怀孕#!"
  cheateb_hook_interaction:0 "@weak_hook_icon! 强牵制"
  cheateb_hook_reason:0 "EB牵制"
  cheateb_befriend_interaction:0 "@alliance_icon! #P 交友#!"
-
-## 3
- 
-
-## 4
-
 
 # \modifiers
  cheateb_keep_modifier:0 "备份modifier"
@@ -50,3 +45,6 @@
 # \religion
  holy_site_ganzhou_effect_name:0 "武力训练"
  holy_site_ganzhou_name:0 "甘州"
+
+
+ HEALTH_POINTS_HINT:0 "\n生命值: [CHARACTER.GetHealth|1V]\n生育力: [CHARACTER.GetFertility|%0V]\n压力: [CHARACTER.GetStress|0V]"

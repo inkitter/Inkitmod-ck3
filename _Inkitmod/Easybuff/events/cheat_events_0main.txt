@@ -46,6 +46,12 @@ cheateb.0010 = {
 			trigger_event = cheateb.6000
 		}
 	}
+	option = {
+		name = cheateb.7000.culture
+		scope:actor = {
+			trigger_event = cheateb.7000
+		}
+	}
 
 	option = {
 		name = cheateb.exit

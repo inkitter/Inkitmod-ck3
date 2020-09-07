@@ -1,6 +1,8 @@
 ﻿l_english:
  cheateb.return:0 "Return"
  cheateb.exit:0 "Close"
+ cheateb.nextpage:0 "PREV"
+ cheateb.prevpage:0 "NEXT"
  cheateb.null:0 ""
 
  cheateb.plus10:0 "+10"
@@ -23,6 +25,7 @@
  cheateb.4000.lifestyle:0 "Lifestyle Points"
  cheateb.5000.dynasty:0 "Dynasty Modifiers"
  cheateb.6000.county:0 "County Modifiers and Polity"
+ cheateb.7000.culture:0 "Culture Innovation"
 
  cheateb.2000.trait.stress:0 "Reduce Stress"
  cheateb.2000.trait.education:0 "Education Trait"
@@ -42,4 +45,13 @@
  cheateb.6001.countychangemode:0 "Change Polity"
 
  cheateb.6002.spawnchar:0 "Spawn Char"
- spawn_female:0 "Female"
+ cheateb.6002.spawn_female:0 "Female"
+ cheateb.6002.spawn_male:0 "Male"
+
+ cheateb.7001.maa:0 "Army"
+ cheateb.7010.tribal:0 "Tribal"
+ cheateb.7020.early:0 "Early"
+ cheateb.7030.high:0 "High"
+ cheateb.7040.late:0 "Late"
+
+HEALTH_POINTS_HINT:0 "\nHealth: [CHARACTER.GetHealth|1V]\nFertility: [CHARACTER.GetFertility|%0V]\nStress: [CHARACTER.GetStress|0V]"
