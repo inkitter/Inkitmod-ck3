@@ -3,7 +3,6 @@
  cheateb_interaction_menu:0 "Easybuff Main"
  cheateb_interaction_menu_relation:0 "Easybuff Relations"
 
-
 # \character_interactions
 ## 0
  cheateb_editmenu_interaction:0 "@warning_icon! Detailed Menu"
@@ -17,6 +16,8 @@
  cheateb_dyprestige_interaction:0 "@dynasty_prestige_icon! Dynasty Prestige"
 
 ## 2
+ cheateb_changename_interaction:0 "@skill_diplomacy_icon! Char #P Rename#!"
+ cheateb_dressed_interaction:0 "Dress/Un"
  cheateb_claim_interaction:0 "@pressed_claim! #P Claim#! Title"
  cheateb_take_alltitle_interaction:0 "@prestige_icon! #N Take#! All Title "
  cheateb_take_title_interaction:0 "@prestige_icon! #N Take#!Main Title"
@@ -25,10 +26,17 @@
  cheateb_kill_interaction:0 "@scheme_icon! #N Kill#!"
  cheateb_imprison_interaction:0 "@crime_icon! #X Impriso#!"
  cheateb_marry_interaction:0 "@arrange_marriage_icon! #P Marry#!"
+ cheateb_setsoulmate_interaction:0 "@arrange_marriage_icon! #P Soulmate#!"
+ cheateb_setlover_interaction:0 "@arrange_marriage_icon! #P Lover#!"
  cheateb_pregnant_interaction:0 "@arrange_marriage_icon! #X Pregnant#!"
  cheateb_hook_interaction:0 "@weak_hook_icon! Strong Hook"
  cheateb_hook_reason:0 "EB Hook "
+ cheateb_addtocourt_interaction:0 "@knight_icon! #P Add to #!Court"
  cheateb_befriend_interaction:0 "@alliance_icon! #P Befriend#!"
+ 
+# \regiment_types
+ privateguard:0 "Bodyguard"
+ privateguard_flavor:0 "Any more is needed?"
 
 # \modifiers
  cheateb_keep_modifier:0 "Bakup modifier"
@@ -45,3 +53,5 @@
 # \religion
  holy_site_ganzhou_effect_name:0 "EB Religion"
  holy_site_ganzhou_name:0 "GanZhou"
+
+  HEALTH_POINTS_HINT:0 "\n生命值: [CHARACTER.GetHealth|1V]\n生育力: [CHARACTER.GetFertility|%0V]\n压力: [CHARACTER.GetStress|0V]"

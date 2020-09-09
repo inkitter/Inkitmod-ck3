@@ -1,12 +1,40 @@
-﻿cheateb_claim_interaction = {
-	category = cheateb_interaction_menu_relation
+﻿cheateb_changename_interaction = {
+	category = cheateb_interaction_menu
 	use_diplomatic_range = no
 	auto_accept = yes
 	ai_will_do = 0
 	
-	is_shown = {
-		NOT = { scope:actor = scope:recipient }
+	on_accept = {
+		scope:actor = {
+			trigger_event = cheateb.9001
+		}
 	}
+}
+
+cheateb_dressed_interaction = {
+	category = cheateb_interaction_menu
+	use_diplomatic_range = no
+	auto_accept = yes
+	ai_will_do = 0
+	
+	on_accept = {
+		scope:recipient = {
+			if = {
+				limit = { has_character_flag = is_naked }
+				remove_character_flag = is_naked
+			}
+			else = {
+				add_character_flag = { flag = is_naked }
+			}
+		}
+	}
+}
+
+cheateb_claim_interaction = {
+	category = cheateb_interaction_menu_relation
+	use_diplomatic_range = no
+	auto_accept = yes
+	ai_will_do = 0
 	
 	on_accept = {
 		scope:actor = {
@@ -34,10 +62,6 @@ cheateb_take_alltitle_interaction = {
 	use_diplomatic_range = no
 	auto_accept = yes
 	ai_will_do = 0
-	
-	is_shown = {
-		NOT = { scope:actor = scope:recipient }
-	}
 	
 	on_accept = {
 		create_title_and_vassal_change = change
@@ -71,10 +95,6 @@ cheateb_take_title_interaction = {
 	use_diplomatic_range = no
 	auto_accept = yes
 	ai_will_do = 0
-	
-	is_shown = {
-		NOT = { scope:actor = scope:recipient }
-	}
 
 	on_accept = { 
 		create_title_and_vassal_change = change
@@ -108,10 +128,6 @@ cheateb_religion_interaction = {
 	auto_accept = yes
 	ai_will_do = 0
 	
-	is_shown = {
-		NOT = { scope:actor = scope:recipient }
-	}
-	
 	on_accept = {
 		scope:actor = {
 			if = {
@@ -134,11 +150,6 @@ cheateb_culture_interaction = {
 	use_diplomatic_range = no
 	auto_accept = yes
 	ai_will_do = 0
-	
-	is_shown = {
-		NOT = { scope:actor = scope:recipient }
-		NOT = { scope:actor.culture = scope:recipient.culture }
-	}
 	
 	on_accept = {
 		scope:actor = {
@@ -163,10 +174,6 @@ cheateb_kill_interaction = {
 	auto_accept = yes
 	ai_will_do = 0
 	
-	is_shown = {
-		scope:recipient = { is_alive = yes }
-	}
-	
 	on_accept = {
 		scope:recipient = {
 			death = { death_reason = death_mysterious }
@@ -179,11 +186,6 @@ cheateb_imprison_interaction = {
 	use_diplomatic_range = no
 	auto_accept = yes
 	ai_will_do = 0
-	
-	is_shown = {
-		scope:recipient = { is_alive = yes }
-		NOT = { scope:recipient = scope:actor }
-	}
 	
 	on_accept = {
 		scope:actor = {
@@ -211,9 +213,36 @@ cheateb_marry_interaction = {
 	auto_accept = yes
 	ai_will_do = 0
 
-	is_shown = {
-		NOT = { scope:recipient = scope:actor }
+	on_accept = {
+		scope:actor = {
+			if = {
+				limit = { has_character_flag = cheateb_targeted }
+				random_living_character = {
+					limit = { has_character_flag = cheateb_target }
+					save_scope_as = cheateb_targetscope
+				}
+			}
+			else = { save_scope_as = cheateb_targetscope }
+		}
+		scope:recipient = {
+			every_spouse = {
+				divorce = scope:recipient
+			}
+		}
+		scope:cheateb_targetscope = {
+			every_spouse = {
+				divorce = scope:cheateb_targetscope
+			}
+			marry = scope:recipient
+		}
 	}
+}
+
+cheateb_setsoulmate_interaction = {
+	category = cheateb_interaction_menu_relation
+	use_diplomatic_range = no
+	auto_accept = yes
+	ai_will_do = 0
 
 	on_accept = {
 		scope:actor = {
@@ -226,8 +255,43 @@ cheateb_marry_interaction = {
 			}
 			else = { save_scope_as = cheateb_targetscope }
 		}
-		scope:cheateb_targetscope = {		
-			marry = scope:recipient
+		scope:cheateb_targetscope = {
+			if = {
+				limit = { has_relation_soulmate = scope:recipient }
+				remove_relation_soulmate = scope:recipient
+			}
+			else = {
+				set_relation_soulmate = scope:recipient
+			}
+		}
+	}
+}
+
+cheateb_setlover_interaction = {
+	category = cheateb_interaction_menu_relation
+	use_diplomatic_range = no
+	auto_accept = yes
+	ai_will_do = 0
+
+	on_accept = {
+		scope:actor = {
+			if = {
+				limit = { has_character_flag = cheateb_targeted }
+				random_living_character = {
+					limit = { has_character_flag = cheateb_target }
+					save_scope_as = cheateb_targetscope
+				}
+			}
+			else = { save_scope_as = cheateb_targetscope }
+		}
+		scope:cheateb_targetscope = {
+			if = {
+				limit = { has_relation_lover = scope:recipient }
+				remove_relation_lover = scope:recipient
+			}
+			else = {
+				set_relation_lover = scope:recipient
+			}
 		}
 	}
 }
@@ -239,7 +303,7 @@ cheateb_pregnant_interaction = {
 	ai_will_do = 0
 
 	is_shown = {
-		NOT = { scope:recipient = scope:actor }
+		scope:recipient = {	is_female = yes }
 	}
 
 	on_accept = {
@@ -265,10 +329,6 @@ cheateb_hook_interaction = {
 	auto_accept = yes
 	ai_will_do = 0
 	
-	is_shown = {
-		NOT = { scope:actor = scope:recipient }
-	}
-	
 	on_accept = {
 		scope:actor = {
 			if = {
@@ -289,16 +349,11 @@ cheateb_hook_interaction = {
 	}
 }
 
-cheateb_befriend_interaction = {
+cheateb_addtocourt_interaction = {
 	category = cheateb_interaction_menu_relation
 	use_diplomatic_range = no
-	common_interaction = yes
 	auto_accept = yes
 	ai_will_do = 0
-
-	is_shown = {
-		NOT = { scope:recipient = scope:actor }
-	}
 
 	on_accept = {
 		scope:actor = {
@@ -312,7 +367,37 @@ cheateb_befriend_interaction = {
 			else = { save_scope_as = cheateb_targetscope }
 		}
 		scope:cheateb_targetscope = {		
-			set_relation_friend = scope:recipient
+			add_courtier = scope:recipient
+		}
+	}
+}
+
+cheateb_befriend_interaction = {
+	category = cheateb_interaction_menu_relation
+	use_diplomatic_range = no
+	common_interaction = yes
+	auto_accept = yes
+	ai_will_do = 0
+
+	on_accept = {
+		scope:actor = {
+			if = {
+				limit = { has_character_flag = cheateb_targeted }
+				random_living_character = {
+					limit = { has_character_flag = cheateb_target }
+					save_scope_as = cheateb_targetscope
+				}
+			}
+			else = { save_scope_as = cheateb_targetscope }
+		}
+		scope:cheateb_targetscope = {
+			if = {
+				limit = { has_relation_friend = scope:recipient }
+				remove_relation_friend = scope:recipient
+			}
+			else = {
+				set_relation_friend = scope:recipient
+			}
 		}
 	}
 }

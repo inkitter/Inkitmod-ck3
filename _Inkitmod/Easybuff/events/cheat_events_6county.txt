@@ -11,15 +11,21 @@ cheateb.6000 = {
 	}
 
 	option = {
-		name = strong_blood
+		name = cheateb.6000.privateguard
 		trigger = { scope:recipient = scope:actor }
 		scope:recipient = {
-			if = { 
-				limit = { has_county_modifier = strong_blood }
-				remove_county_modifier = strong_blood
-			}
-			else = {
-				add_county_modifier = strong_blood
+			unlock_maa = privateguard
+			spawn_army = {
+				levies = 0
+				men_at_arms = {
+					type = privateguard
+					stacks = 2
+				}
+				location = scope:recipient.capital_province
+				inheritable = yes
+				uses_supply = no
+				name = privateguard
+				
 			}
 		}
 		scope:actor = {
@@ -30,7 +36,7 @@ cheateb.6000 = {
 	option = {
 		name = cheateb_niverdie_modifier
 		trigger = { scope:recipient = scope:actor }
-		scope:recipient = {
+		scope:recipient.county = {
 			if = { 
 				limit = { has_county_modifier = cheateb_niverdie_modifier }
 				remove_county_modifier = cheateb_niverdie_modifier
@@ -46,7 +52,7 @@ cheateb.6000 = {
 
 	option = {
 		name = cheateb_development_modifier
-		scope:recipient = {
+		scope:recipient.county = {
 			if = { 
 				limit = { has_county_modifier = cheateb_development_modifier }
 				remove_county_modifier = cheateb_development_modifier
@@ -71,6 +77,13 @@ cheateb.6000 = {
 		name = cheateb.6002.spawnchar
 		scope:actor = {
 			trigger_event = cheateb.6002
+		}
+	}
+
+	option = {
+		name = cheateb.6003.switchholding
+		scope:actor = {
+			trigger_event = cheateb.6003
 		}
 	}
 
@@ -214,6 +227,64 @@ cheateb.6002 = {
 		}
 	}
 
+
+	option = {
+		name = cheateb.return
+		scope:actor = {
+			trigger_event = cheateb.6000
+		}
+	}
+}
+
+cheateb.6003 = {
+	type = character_event
+	title = cheateb.6002.spawnchar
+	desc = cheateb.null
+	theme = realm
+	right_portrait = {
+		character = scope:recipient
+		animation = personality_honorable
+	}
+
+	option = {
+		name = cheateb.6003.tocastle
+		scope:recipient.location = {
+			set_holding_type = castle_holding
+		}
+		scope:actor = {
+			trigger_event = cheateb.6003
+		}
+	}
+
+	option = {
+		name = cheateb.6003.tochurch
+		scope:recipient.location = {
+			set_holding_type = church_holding
+		}
+		scope:actor = {
+			trigger_event = cheateb.6003
+		}
+	}
+
+	option = {
+		name = cheateb.6003.tocity
+		scope:recipient.location = {
+			set_holding_type = city_holding
+		}
+		scope:actor = {
+			trigger_event = cheateb.6003
+		}
+	}
+
+	option = {
+		name = cheateb.6003.totribal
+		scope:recipient.location = {
+			set_holding_type = tribal_holding
+		}
+		scope:actor = {
+			trigger_event = cheateb.6003
+		}
+	}
 
 	option = {
 		name = cheateb.return

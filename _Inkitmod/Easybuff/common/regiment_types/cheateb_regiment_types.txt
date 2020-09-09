@@ -1,0 +1,38 @@
+﻿privateguard = {
+	type = light_cavalry
+	
+	damage = 100
+	toughness = 200
+	pursuit = 100
+	screen = 100
+	
+	terrain_bonus = {
+		plains = { damage = 5 }
+		drylands = { damage = 5 }
+		desert = { damage = 5 }
+		hills = { damage = 5 }
+		mountains = { damage = 5 }
+		desert_mountains = { damage = 5 }
+		wetlands = { damage = 5 }
+	}
+
+	counters = {
+		archers = 1
+		skirmishers = 1
+		pikemen = 1
+		heavy_infantry = 1
+		light_cavalry = 1
+		heavy_cavalry = 1
+	}
+
+	siege_tier = 4
+	siege_value = 2
+
+	buy_cost = { gold = 10 }
+	low_maintenance_cost = { gold = 0.2 }
+	high_maintenance_cost = { gold = 0.5 }
+	
+	stack = 100
+	ai_quality = { value = 0 }
+	icon = light_cavalry
+}

@@ -26,6 +26,7 @@
  cheateb.5000.dynasty:0 "宗族调整因素"
  cheateb.6000.county:0 "领地调整因素及政体"
  cheateb.7000.culture:0 "文化修改"
+ cheateb.9000.other: "其他"
 
  cheateb.2000.trait.stress:0 "减压"
  cheateb.2000.trait.education:0 "教育特性"
@@ -41,15 +42,24 @@
  cheateb.4000.lifestyle.stewardship:0 "管理"
  cheateb.4000.lifestyle.intrigue:0 "谋略"
  cheateb.4000.lifestyle.learning:0 "知识"
- 
+
+ cheateb.6000.privateguard:0 "亲兵卫" 
  cheateb.6001.countychangemode:0 "修改政体"
 
  cheateb.6002.spawnchar:0 "生成人物"
  cheateb.6002.spawn_female:0 "女性"
  cheateb.6002.spawn_male:0 "男性"
 
+ cheateb.6003.switchholding:0 "改变领地类型(目标所在地)"
+ cheateb.6003.tocastle:0 "城堡"
+ cheateb.6003.tochurch:0 "教堂"
+ cheateb.6003.tocity:0 "城市"
+ cheateb.6003.totribal:0 "部落"
+
  cheateb.7001.maa:0 "文化兵种"
  cheateb.7010.tribal:0 "部落时代"
  cheateb.7020.early:0 "早期"
  cheateb.7030.high:0 "中期"
  cheateb.7040.late:0 "晚期"
+
+ cheateb.9001.rename: "修改名字"

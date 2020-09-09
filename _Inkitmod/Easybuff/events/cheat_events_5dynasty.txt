@@ -28,7 +28,7 @@ cheateb.5000 = {
 
 	option = {
 		name = cheateb_stat7_modifier
-		scope:recipient = {
+		scope:recipient.dynasty = {
 			if = { 
 				limit = { has_dynasty_modifier = cheateb_stat7_modifier }
 				remove_dynasty_modifier = cheateb_stat7_modifier

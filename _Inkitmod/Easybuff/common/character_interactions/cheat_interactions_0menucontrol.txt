@@ -3,6 +3,7 @@
 	common_interaction = yes
 	use_diplomatic_range = no
 	auto_accept = yes
+	ignores_pending_interaction_block = yes
 	ai_will_do = 0
 	
 	on_accept = {
@@ -18,6 +19,7 @@ cheateb_settarget_interaction = {
 	common_interaction = yes
 	use_diplomatic_range = no
 	auto_accept = yes
+	ignores_pending_interaction_block = yes
 	ai_will_do = 0
 	
 	on_accept = {
@@ -43,6 +45,7 @@ cheateb_removetarget_interaction = {
 	category = cheateb_interaction_menu
 	use_diplomatic_range = no
 	auto_accept = yes
+	ignores_pending_interaction_block = yes
 	ai_will_do = 0
 
 	is_shown = {

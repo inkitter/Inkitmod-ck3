@@ -1,0 +1,58 @@
+﻿namespace = cheateb
+
+cheateb.9000 = {
+	type = character_event
+	title = cheateb.9000.other
+	desc = cheateb.null
+	theme = realm
+	right_portrait = {
+		character = scope:recipient
+		animation = personality_honorable
+	}
+
+	option = {
+		name = cheateb.9001.rename
+		scope:actor = {
+			trigger_event = cheateb.9001
+		}
+	}
+	option = {
+		name = cheateb.return
+		scope:actor = {
+			trigger_event = cheateb.0010
+		}
+	}
+	option = {
+		name = cheateb.exit
+	}
+}
+
+cheateb.9001 = {
+	type = character_event
+	title = cheateb.9001.rename
+	desc = cheateb.null
+	theme = realm
+	right_portrait = {
+		character = scope:recipient
+		animation = personality_honorable
+	}
+
+	widgets = {
+		widget = {
+			gui = "event_window_widget_name_child"
+			container = "dynamic_birth_name"
+			controller = name_character
+			setup_scope = { scope:recipient = { save_scope_as = name_character_target } }
+		}
+	}
+
+	option = {
+		name = cheateb.return
+		scope:actor = {
+			trigger_event = cheateb.9000
+		}
+	}
+	option = {
+		name = cheateb.exit
+	}
+}
