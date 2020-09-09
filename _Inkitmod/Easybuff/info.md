@@ -1,19 +1,21 @@
-﻿[h1][b]Easy Buff[/b][/h1]
+﻿[h1][b]Easy Buff 2020.9.9[/b][/h1]
 
 [h1]Right Click on Characters to Open[/h1]
 # Features:
 * Give Coin, Prestige, Piety, Dynasty Prestige to any one.
 * Interactions to any one.
+* Rename.
 * [b]Set a target and interact to others.[/b] So you can create more relations between others as you wish.
 * A detailed menu to do more things.
 
 ## Detailed Menu:
-* Character Stats Editor.
+* Character Stats Editor. 
 * Some Traits, Personality, Talent, Education.
 * Lifestyle Point.
 * Modifiers on Character, Dynasty and County.
 * Change Polity.
 * Spawn a Powerful Character.
+* Change Holding Type. Castle, Chruch, City or Tribal
 
 You can try the font if you like it. https://steamcommunity.com/sharedfiles/filedetails/?id=2222147790
 
@@ -35,6 +37,7 @@ Below for Chinese
 * 可给人物、家族、领地添加的buff.
 * 修改政体
 * 生成一个强力角色.
+* 改变领地基础类型，城堡、教堂、城市、部落
 
 ## 附带了显示生命值的功能。
 

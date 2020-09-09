@@ -24,7 +24,7 @@
  cheateb_religion_interaction:0 "@piety_icon! #P Change#! Religion"
  cheateb_culture_interaction:0 "@skill_learning_icon! #P Change#! Culture"
  cheateb_kill_interaction:0 "@scheme_icon! #N Kill#!"
- cheateb_imprison_interaction:0 "@crime_icon! #X Impriso#!"
+ cheateb_imprison_interaction:0 "@crime_icon! #X Imprison#!"
  cheateb_marry_interaction:0 "@arrange_marriage_icon! #P Marry#!"
  cheateb_setsoulmate_interaction:0 "@arrange_marriage_icon! #P Soulmate#!"
  cheateb_setlover_interaction:0 "@arrange_marriage_icon! #P Lover#!"
