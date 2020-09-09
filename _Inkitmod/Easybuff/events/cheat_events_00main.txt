@@ -11,27 +11,9 @@ cheateb.0010 = {
 	}
 
 	option = {
-		name = cheateb.1000.statmod
+		name = cheateb.1000.charedit
 		scope:actor = {
 			trigger_event = cheateb.1000
-		}
-	}
-	option = {
-		name = cheateb.2000.trait
-		scope:actor = {
-			trigger_event = cheateb.2000
-		}
-	}
-	option = {
-		name = cheateb.3000.modifier
-		scope:actor = {
-			trigger_event = cheateb.3000
-		}
-	}
-	option = {
-		name = cheateb.4000.lifestyle
-		scope:actor = {
-			trigger_event = cheateb.4000
 		}
 	}
 	option = {
@@ -50,12 +32,6 @@ cheateb.0010 = {
 		name = cheateb.7000.culture
 		scope:actor = {
 			trigger_event = cheateb.7000
-		}
-	}
-	option = {
-		name = cheateb.9000.other
-		scope:actor = {
-			trigger_event = cheateb.9000
 		}
 	}
 

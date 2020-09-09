@@ -1,8 +1,8 @@
 ﻿namespace = cheateb
 
-cheateb.4000 = {
+cheateb.1400 = {
 	type = character_event
-	title = cheateb.4000.lifestyle
+	title = cheateb.1400.lifestyle
 	desc = cheateb.null
 	theme = realm
 	right_portrait = {
@@ -17,7 +17,7 @@ cheateb.4000 = {
 			add_diplomacy_lifestyle_perk_points = 1
 		}
 		scope:actor = {
-			trigger_event = cheateb.4000
+			trigger_event = cheateb.1400
 		}
 	}
 	option = {
@@ -26,7 +26,7 @@ cheateb.4000 = {
 			add_martial_lifestyle_perk_points = 1
 		}
 		scope:actor = {
-			trigger_event = cheateb.4000
+			trigger_event = cheateb.1400
 		}
 	}
 	option = {
@@ -35,7 +35,7 @@ cheateb.4000 = {
 			add_stewardship_lifestyle_perk_points = 1
 		}
 		scope:actor = {
-			trigger_event = cheateb.4000
+			trigger_event = cheateb.1400
 		}
 	}
 	option = {
@@ -44,7 +44,7 @@ cheateb.4000 = {
 			add_intrigue_lifestyle_perk_points = 1
 		}
 		scope:actor = {
-			trigger_event = cheateb.4000
+			trigger_event = cheateb.1400
 		}
 	}
 	option = {
@@ -53,7 +53,7 @@ cheateb.4000 = {
 			add_learning_lifestyle_perk_points = 1
 		}
 		scope:actor = {
-			trigger_event = cheateb.4000
+			trigger_event = cheateb.1400
 		}
 	}
 	option = {
@@ -66,14 +66,14 @@ cheateb.4000 = {
 			add_learning_lifestyle_perk_points = 5
 		}
 		scope:actor = {
-			trigger_event = cheateb.4000
+			trigger_event = cheateb.1400
 		}
 	}
 	
 	option = {
 		name = cheateb.return
 		scope:actor = {
-			trigger_event = cheateb.0010
+			trigger_event = cheateb.1000
 		}
 	}
 }

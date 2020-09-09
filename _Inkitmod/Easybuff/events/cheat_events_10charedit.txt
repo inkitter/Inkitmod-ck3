@@ -1,8 +1,8 @@
 ﻿namespace = cheateb
 
-cheateb.9000 = {
+cheateb.1000 = {
 	type = character_event
-	title = cheateb.9000.other
+	title = cheateb.1000.charedit
 	desc = cheateb.null
 	theme = realm
 	right_portrait = {
@@ -11,25 +11,51 @@ cheateb.9000 = {
 	}
 
 	option = {
-		name = cheateb.9001.rename
+		name = cheateb.1001.rename
 		scope:actor = {
-			trigger_event = cheateb.9001
+			trigger_event = cheateb.1001
 		}
 	}
 	option = {
-		name = cheateb.return
-		scope:actor = {
-			trigger_event = cheateb.0010
+		name = cheateb.1000.stress
+		scope:recipient = {
+			add_stress = -100
 		}
 	}
+	option = {
+		name = cheateb.1100.statmod
+		scope:actor = {
+			trigger_event = cheateb.1100
+		}
+	}
+	option = {
+		name = cheateb.1200.trait
+		scope:actor = {
+			trigger_event = cheateb.1200
+		}
+	}
+	option = {
+		name = cheateb.1300.modifier
+		scope:actor = {
+			trigger_event = cheateb.1300
+		}
+	}
+	option = {
+		name = cheateb.1400.lifestyle
+		scope:actor = {
+			trigger_event = cheateb.1400
+		}
+	}
+	
+
 	option = {
 		name = cheateb.exit
 	}
 }
 
-cheateb.9001 = {
+cheateb.1001 = {
 	type = character_event
-	title = cheateb.9001.rename
+	title = cheateb.1001.rename
 	desc = cheateb.null
 	theme = realm
 	right_portrait = {
@@ -49,7 +75,7 @@ cheateb.9001 = {
 	option = {
 		name = cheateb.return
 		scope:actor = {
-			trigger_event = cheateb.9000
+			trigger_event = cheateb.1000
 		}
 	}
 	option = {

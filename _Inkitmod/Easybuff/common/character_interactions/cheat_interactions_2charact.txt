@@ -1,17 +1,4 @@
-﻿cheateb_changename_interaction = {
-	category = cheateb_interaction_menu
-	use_diplomatic_range = no
-	auto_accept = yes
-	ai_will_do = 0
-	
-	on_accept = {
-		scope:actor = {
-			trigger_event = cheateb.9001
-		}
-	}
-}
-
-cheateb_dressed_interaction = {
+﻿cheateb_dressed_interaction = {
 	category = cheateb_interaction_menu
 	use_diplomatic_range = no
 	auto_accept = yes
@@ -37,16 +24,7 @@ cheateb_claim_interaction = {
 	ai_will_do = 0
 	
 	on_accept = {
-		scope:actor = {
-			if = {
-				limit = { has_character_flag = cheateb_targeted }
-				random_living_character = {
-					limit = { has_character_flag = cheateb_target }
-					save_scope_as = cheateb_targetscope
-				}
-			}
-			else = { save_scope_as = cheateb_targetscope }
-		}
+		cheateb_targetchar_effect = yes
 		scope:recipient = {
 			every_held_title = {
 				scope:cheateb_targetscope = {
@@ -68,16 +46,7 @@ cheateb_take_alltitle_interaction = {
 		scope:change = {
 			set_title_and_vassal_change_type = conquest
 		}
-		scope:actor = {
-			if = {
-				limit = { has_character_flag = cheateb_targeted }
-				random_living_character = {
-					limit = { has_character_flag = cheateb_target }
-					save_scope_as = cheateb_targetscope
-				}
-			}
-			else = { save_scope_as = cheateb_targetscope }
-		}
+		cheateb_targetchar_effect = yes
 		scope:recipient = {
 				every_held_title = {
 					change_title_holder = {
@@ -102,16 +71,8 @@ cheateb_take_title_interaction = {
 			set_title_and_vassal_change_type = conquest
 		}
 
-		scope:actor = {
-			if = {
-				limit = { has_character_flag = cheateb_targeted }
-				random_living_character = {
-					limit = { has_character_flag = cheateb_target }
-					save_scope_as = cheateb_targetscope
-				}
-			}
-			else = { save_scope_as = cheateb_targetscope }
-		}
+		cheateb_targetchar_effect = yes
+		
 		scope:recipient.primary_title = {
 			change_title_holder = {
 				holder = scope:cheateb_targetscope
@@ -129,16 +90,7 @@ cheateb_religion_interaction = {
 	ai_will_do = 0
 	
 	on_accept = {
-		scope:actor = {
-			if = {
-				limit = { has_character_flag = cheateb_targeted }
-				random_living_character = {
-					limit = { has_character_flag = cheateb_target }
-					save_scope_as = cheateb_targetscope
-				}
-			}
-			else = { save_scope_as = cheateb_targetscope }
-		}
+		cheateb_targetchar_effect = yes
 		scope:recipient = {
 			set_character_faith = scope:cheateb_targetscope.faith
 		}
@@ -152,16 +104,7 @@ cheateb_culture_interaction = {
 	ai_will_do = 0
 	
 	on_accept = {
-		scope:actor = {
-			if = {
-				limit = { has_character_flag = cheateb_targeted }
-				random_living_character = {
-					limit = { has_character_flag = cheateb_target }
-					save_scope_as = cheateb_targetscope
-				}
-			}
-			else = { save_scope_as = cheateb_targetscope }
-		}
+		cheateb_targetchar_effect = yes
 		scope:recipient = {
 			set_culture = scope:cheateb_targetscope.culture
 		}
@@ -188,20 +131,17 @@ cheateb_imprison_interaction = {
 	ai_will_do = 0
 	
 	on_accept = {
-		scope:actor = {
-			if = {
-				limit = { has_character_flag = cheateb_targeted }
-				random_living_character = {
-					limit = { has_character_flag = cheateb_target }
-					save_scope_as = cheateb_targetscope
-				}
-			}
-			else = { save_scope_as = cheateb_targetscope }
-		}
+		cheateb_targetchar_effect = yes
 		scope:cheateb_targetscope = {
-			imprison = {
-				target = scope:recipient
-				type = dungeon
+			if = {
+				limit = { is_imprisoned = yes }
+				release_from_prison = yes
+			}
+			else = {
+				imprison = {
+					target = scope:recipient
+					type = dungeon
+				}
 			}
 		}
 	}
@@ -214,26 +154,27 @@ cheateb_marry_interaction = {
 	ai_will_do = 0
 
 	on_accept = {
-		scope:actor = {
-			if = {
-				limit = { has_character_flag = cheateb_targeted }
-				random_living_character = {
-					limit = { has_character_flag = cheateb_target }
-					save_scope_as = cheateb_targetscope
+		cheateb_targetchar_effect = yes
+		if = {
+			scope:recipient = {
+				limit = { is_married = yes }
+				every_spouse = {
+					divorce = scope:recipient
 				}
 			}
-			else = { save_scope_as = cheateb_targetscope }
 		}
-		scope:recipient = {
-			every_spouse = {
-				divorce = scope:recipient
+		else_if = {
+			scope:cheateb_targetscope = {
+				limit = { is_married = yes }
+				every_spouse = {
+					divorce = scope:cheateb_targetscope
+				}
 			}
 		}
-		scope:cheateb_targetscope = {
-			every_spouse = {
-				divorce = scope:cheateb_targetscope
+		else = {
+			scope:cheateb_targetscope = {
+				marry = scope:recipient
 			}
-			marry = scope:recipient
 		}
 	}
 }
@@ -245,16 +186,7 @@ cheateb_setsoulmate_interaction = {
 	ai_will_do = 0
 
 	on_accept = {
-		scope:actor = {
-			if = {
-				limit = { has_character_flag = cheateb_targeted }
-				random_living_character = {
-					limit = { has_character_flag = cheateb_target }
-					save_scope_as = cheateb_targetscope
-				}
-			}
-			else = { save_scope_as = cheateb_targetscope }
-		}
+		cheateb_targetchar_effect = yes
 		scope:cheateb_targetscope = {
 			if = {
 				limit = { has_relation_soulmate = scope:recipient }
@@ -274,16 +206,7 @@ cheateb_setlover_interaction = {
 	ai_will_do = 0
 
 	on_accept = {
-		scope:actor = {
-			if = {
-				limit = { has_character_flag = cheateb_targeted }
-				random_living_character = {
-					limit = { has_character_flag = cheateb_target }
-					save_scope_as = cheateb_targetscope
-				}
-			}
-			else = { save_scope_as = cheateb_targetscope }
-		}
+		cheateb_targetchar_effect = yes
 		scope:cheateb_targetscope = {
 			if = {
 				limit = { has_relation_lover = scope:recipient }
@@ -307,18 +230,15 @@ cheateb_pregnant_interaction = {
 	}
 
 	on_accept = {
-		scope:actor = {
+		cheateb_targetchar_effect = yes
+		scope:recipient = {
 			if = {
-				limit = { has_character_flag = cheateb_targeted }
-				random_living_character = {
-					limit = { has_character_flag = cheateb_target }
-					save_scope_as = cheateb_targetscope
-				}
+				limit = { is_pregnant = yes }
+				end_pregnancy = yes
 			}
-			else = { save_scope_as = cheateb_targetscope }
-		}
-		scope:recipient = {		
-			make_pregnant = { father = scope:cheateb_targetscope }
+			else = {
+				make_pregnant = { father = scope:cheateb_targetscope }
+			}
 		}
 	}
 }
@@ -330,24 +250,41 @@ cheateb_hook_interaction = {
 	ai_will_do = 0
 	
 	on_accept = {
-		scope:actor = {
-			if = {
-				limit = { has_character_flag = cheateb_targeted }
-				random_living_character = {
-					limit = { has_character_flag = cheateb_target }
-					save_scope_as = cheateb_targetscope
-				}
-			}
-			else = { save_scope_as = cheateb_targetscope }
-		}
+		cheateb_targetchar_effect = yes
 		scope:cheateb_targetscope = {
-			add_hook = {
-				target = scope:recipient
-				type = loyalty_hook
+			if = {
+				limit = { has_hook = scope:recipient }
+				remove_hook = scope:recipient
+			}
+			else = {
+				add_hook = {
+					target = scope:recipient
+					type = loyalty_hook
+				}
 			}
 		}
 	}
 }
+
+cheateb_revealsecret_interaction = {
+	category = cheateb_interaction_menu_relation
+	use_diplomatic_range = no
+	auto_accept = yes
+	ai_will_do = 0
+	
+	on_accept = {
+		cheateb_targetchar_effect = yes
+		scope:cheateb_targetscope = {
+			every_secret = {
+				limit = {
+					NOT = { is_known_by = scope:cheateb_targetscope }
+				}
+				reveal_to = scope:cheateb_targetscope
+			}
+		}
+	}
+}
+
 
 cheateb_addtocourt_interaction = {
 	category = cheateb_interaction_menu_relation
@@ -356,16 +293,7 @@ cheateb_addtocourt_interaction = {
 	ai_will_do = 0
 
 	on_accept = {
-		scope:actor = {
-			if = {
-				limit = { has_character_flag = cheateb_targeted }
-				random_living_character = {
-					limit = { has_character_flag = cheateb_target }
-					save_scope_as = cheateb_targetscope
-				}
-			}
-			else = { save_scope_as = cheateb_targetscope }
-		}
+		cheateb_targetchar_effect = yes
 		scope:cheateb_targetscope = {		
 			add_courtier = scope:recipient
 		}
@@ -380,16 +308,7 @@ cheateb_befriend_interaction = {
 	ai_will_do = 0
 
 	on_accept = {
-		scope:actor = {
-			if = {
-				limit = { has_character_flag = cheateb_targeted }
-				random_living_character = {
-					limit = { has_character_flag = cheateb_target }
-					save_scope_as = cheateb_targetscope
-				}
-			}
-			else = { save_scope_as = cheateb_targetscope }
-		}
+		cheateb_targetchar_effect = yes
 		scope:cheateb_targetscope = {
 			if = {
 				limit = { has_relation_friend = scope:recipient }

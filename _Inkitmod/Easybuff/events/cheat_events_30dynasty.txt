@@ -1,8 +1,8 @@
 ﻿namespace = cheateb
 
-cheateb.5000 = {
+cheateb.3000 = {
 	type = character_event
-	title = cheateb.5000.dynasty
+	title = cheateb.3000.dynasty
 	desc = cheateb.null
 	theme = realm
 	right_portrait = {
@@ -22,7 +22,7 @@ cheateb.5000 = {
 			}
 		}
 		scope:actor = {
-			trigger_event = cheateb.5000
+			trigger_event = cheateb.3000
 		}
 	}
 
@@ -38,7 +38,7 @@ cheateb.5000 = {
 			}
 		}
 		scope:actor = {
-			trigger_event = cheateb.5000
+			trigger_event = cheateb.3000
 		}
 	}
 
@@ -54,7 +54,7 @@ cheateb.5000 = {
 			}
 		}
 		scope:actor = {
-			trigger_event = cheateb.5000
+			trigger_event = cheateb.3000
 		}
 	}
 

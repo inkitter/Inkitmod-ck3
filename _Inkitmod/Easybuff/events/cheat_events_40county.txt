@@ -1,8 +1,8 @@
 ﻿namespace = cheateb
 
-cheateb.6000 = {
+cheateb.4000 = {
 	type = character_event
-	title = cheateb.6000.county
+	title = cheateb.4000.county
 	desc = cheateb.null
 	theme = realm
 	right_portrait = {
@@ -11,7 +11,7 @@ cheateb.6000 = {
 	}
 
 	option = {
-		name = cheateb.6000.privateguard
+		name = cheateb.4000.privateguard
 		trigger = { scope:recipient = scope:actor }
 		scope:recipient = {
 			unlock_maa = privateguard
@@ -29,24 +29,7 @@ cheateb.6000 = {
 			}
 		}
 		scope:actor = {
-			trigger_event = cheateb.6000
-		}
-	}
-
-	option = {
-		name = cheateb_niverdie_modifier
-		trigger = { scope:recipient = scope:actor }
-		scope:recipient.county = {
-			if = { 
-				limit = { has_county_modifier = cheateb_niverdie_modifier }
-				remove_county_modifier = cheateb_niverdie_modifier
-			}
-			else = {
-				add_county_modifier = cheateb_niverdie_modifier
-			}
-		}
-		scope:actor = {
-			trigger_event = cheateb.6000
+			trigger_event = cheateb.4000
 		}
 	}
 
@@ -62,30 +45,42 @@ cheateb.6000 = {
 			}
 		}
 		scope:actor = {
-			trigger_event = cheateb.6000
+			trigger_event = cheateb.4000
 		}
 	}
 
 	option = {
-		name = cheateb.6001.countychangemode
+		name = cheateb.4001.countychangemode
 		scope:actor = {
-			trigger_event = cheateb.6001
+			trigger_event = cheateb.4001
 		}
 	}
 
 	option = {
-		name = cheateb.6002.spawnchar
+		name = cheateb.4002.spawnchar
 		scope:actor = {
-			trigger_event = cheateb.6002
+			trigger_event = cheateb.4002
 		}
 	}
 
 	option = {
-		name = cheateb.6003.switchholding
+		name = cheateb.4000.addslot
+		scope:recipient.location = {
+			add_building_slot = 1
+		}
 		scope:actor = {
-			trigger_event = cheateb.6003
+			trigger_event = cheateb.4000
 		}
 	}
+
+	option = {
+		name = cheateb.4003.switchholding
+		scope:actor = {
+			trigger_event = cheateb.4003
+		}
+	}
+
+	
 
 	option = {
 		name = cheateb.return
@@ -95,9 +90,9 @@ cheateb.6000 = {
 	}
 }
 
-cheateb.6001 = {
+cheateb.4001 = {
 	type = character_event
-	title = cheateb.6001.countychangemode
+	title = cheateb.4001.countychangemode
 	desc = cheateb.null
 	theme = realm
 	right_portrait = {
@@ -111,7 +106,7 @@ cheateb.6001 = {
 			change_government = feudal_government
 		}
 		scope:actor = {
-			trigger_event = cheateb.6001
+			trigger_event = cheateb.4001
 		}
 	}
 	option = {
@@ -120,7 +115,7 @@ cheateb.6001 = {
 			change_government = clan_government
 		}
 		scope:actor = {
-			trigger_event = cheateb.6001
+			trigger_event = cheateb.4001
 		}
 	}
 	option = {
@@ -129,48 +124,48 @@ cheateb.6001 = {
 			change_government = tribal_government
 		}
 		scope:actor = {
-			trigger_event = cheateb.6001
+			trigger_event = cheateb.4001
 		}
 	}
-	# option = {
-	# 	name = republic_government
-	# 	scope:recipient = {
-	# 		change_government = republic_government
-	# 	}
-	# 	scope:actor = {
-	# 		trigger_event = cheateb.6001
-	# 	}
-	# }
-	# option = {
-	# 	name = mercenary_government
-	# 	scope:recipient = {
-	# 		change_government = mercenary_government
-	# 	}
-	# 	scope:actor = {
-	# 		trigger_event = cheateb.6001
-	# 	}
-	# }
-	# option = {
-	# 	name = theocracy_government
-	# 	scope:recipient = {
-	# 		change_government = theocracy_government
-	# 	}
-	# 	scope:actor = {
-	# 		trigger_event = cheateb.6001
-	# 	}
-	# }
+	option = {
+		name = republic_government
+		scope:recipient = {
+			change_government = republic_government
+		}
+		scope:actor = {
+			trigger_event = cheateb.4001
+		}
+	}
+	option = {
+		name = mercenary_government
+		scope:recipient = {
+			change_government = mercenary_government
+		}
+		scope:actor = {
+			trigger_event = cheateb.4001
+		}
+	}
+	option = {
+		name = theocracy_government
+		scope:recipient = {
+			change_government = theocracy_government
+		}
+		scope:actor = {
+			trigger_event = cheateb.4001
+		}
+	}
 
 	option = {
 		name = cheateb.return
 		scope:actor = {
-			trigger_event = cheateb.6000
+			trigger_event = cheateb.4000
 		}
 	}
 }
 
-cheateb.6002 = {
+cheateb.4002 = {
 	type = character_event
-	title = cheateb.6002.spawnchar
+	title = cheateb.4002.spawnchar
 	desc = cheateb.null
 	theme = realm
 	right_portrait = {
@@ -179,7 +174,7 @@ cheateb.6002 = {
 	}
 
 	option = {
-		name = cheateb.6002.spawn_female
+		name = cheateb.4002.spawn_female
 		scope:recipient = {
 			create_character = {
 				age = 20
@@ -199,11 +194,11 @@ cheateb.6002 = {
 			}
 		}
 		scope:actor = {
-			trigger_event = cheateb.6002
+			trigger_event = cheateb.4002
 		}
 	}
 	option = {
-		name = cheateb.6002.spawn_male
+		name = cheateb.4002.spawn_male
 		scope:recipient = {
 			create_character = {
 				age = 20
@@ -223,7 +218,7 @@ cheateb.6002 = {
 			}
 		}
 		scope:actor = {
-			trigger_event = cheateb.6002
+			trigger_event = cheateb.4002
 		}
 	}
 
@@ -231,14 +226,14 @@ cheateb.6002 = {
 	option = {
 		name = cheateb.return
 		scope:actor = {
-			trigger_event = cheateb.6000
+			trigger_event = cheateb.4000
 		}
 	}
 }
 
-cheateb.6003 = {
+cheateb.4003 = {
 	type = character_event
-	title = cheateb.6002.spawnchar
+	title = cheateb.4003.switchholding
 	desc = cheateb.null
 	theme = realm
 	right_portrait = {
@@ -247,49 +242,49 @@ cheateb.6003 = {
 	}
 
 	option = {
-		name = cheateb.6003.tocastle
+		name = cheateb.4003.tocastle
 		scope:recipient.location = {
 			set_holding_type = castle_holding
 		}
 		scope:actor = {
-			trigger_event = cheateb.6003
+			trigger_event = cheateb.4003
 		}
 	}
 
 	option = {
-		name = cheateb.6003.tochurch
+		name = cheateb.4003.tochurch
 		scope:recipient.location = {
 			set_holding_type = church_holding
 		}
 		scope:actor = {
-			trigger_event = cheateb.6003
+			trigger_event = cheateb.4003
 		}
 	}
 
 	option = {
-		name = cheateb.6003.tocity
+		name = cheateb.4003.tocity
 		scope:recipient.location = {
 			set_holding_type = city_holding
 		}
 		scope:actor = {
-			trigger_event = cheateb.6003
+			trigger_event = cheateb.4003
 		}
 	}
 
 	option = {
-		name = cheateb.6003.totribal
+		name = cheateb.4003.totribal
 		scope:recipient.location = {
 			set_holding_type = tribal_holding
 		}
 		scope:actor = {
-			trigger_event = cheateb.6003
+			trigger_event = cheateb.4003
 		}
 	}
 
 	option = {
 		name = cheateb.return
 		scope:actor = {
-			trigger_event = cheateb.6000
+			trigger_event = cheateb.4000
 		}
 	}
 }

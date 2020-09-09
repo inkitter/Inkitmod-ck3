@@ -31,6 +31,7 @@
  cheateb_pregnant_interaction:0 "@arrange_marriage_icon! #X Pregnant#!"
  cheateb_hook_interaction:0 "@weak_hook_icon! Strong Hook"
  cheateb_hook_reason:0 "EB Hook "
+ cheateb_revealsecret_interaction:0 "Get Secret"
  cheateb_addtocourt_interaction:0 "@knight_icon! #P Add to #!Court"
  cheateb_befriend_interaction:0 "@alliance_icon! #P Befriend#!"
  
@@ -54,4 +55,4 @@
  holy_site_ganzhou_effect_name:0 "EB Religion"
  holy_site_ganzhou_name:0 "GanZhou"
 
-  HEALTH_POINTS_HINT:0 "\n生命值: [CHARACTER.GetHealth|1V]\n生育力: [CHARACTER.GetFertility|%0V]\n压力: [CHARACTER.GetStress|0V]"
+ HEALTH_POINTS_HINT:0 "\n生命值: [CHARACTER.GetHealth|1V]\n生育力: [CHARACTER.GetFertility|%0V]\n压力: [CHARACTER.GetStress|0V]"

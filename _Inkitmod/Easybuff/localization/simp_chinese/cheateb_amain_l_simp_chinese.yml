@@ -31,6 +31,7 @@
  cheateb_pregnant_interaction:0 "@arrange_marriage_icon! #X 怀孕#!"
  cheateb_hook_interaction:0 "@weak_hook_icon! 强牵制"
  cheateb_hook_reason:0 "EB牵制"
+ cheateb_revealsecret_interaction:0 "获取秘密"
  cheateb_addtocourt_interaction:0 "@knight_icon! #P 加入#!宫廷"
  cheateb_befriend_interaction:0 "@alliance_icon! #P 交友#!"
 

@@ -15,7 +15,8 @@
 * Modifiers on Character, Dynasty and County.
 * Change Polity.
 * Spawn a Powerful Character.
-* Change Holding Type. Castle, Chruch, City or Tribal
+* Change Holding Type. Castle, Chruch, City or Tribal.
+* Add Building Slot.
 
 You can try the font if you like it. https://steamcommunity.com/sharedfiles/filedetails/?id=2222147790
 

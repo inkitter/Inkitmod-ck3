@@ -1,8 +1,8 @@
 ﻿namespace = cheateb
 
-cheateb.1000 = {
+cheateb.1100 = {
 	type = character_event
-	title = cheateb.1000.statmod
+	title = cheateb.1100.statmod
 	desc = cheateb.null
 	theme = realm
 	right_portrait = {
@@ -21,54 +21,54 @@ cheateb.1000 = {
 			add_prowess_skill = 5
 		}
 		scope:actor = {
-			trigger_event = cheateb.1000
+			trigger_event = cheateb.1100
 		}
 	}
 	option = {
 		name = cheateb.diplomacy
 		scope:actor = {
-			trigger_event = cheateb.1001
+			trigger_event = cheateb.1101
 		}
 	}
 	option = {
 		name = cheateb.martial
 		scope:actor = {
-			trigger_event = cheateb.1002
+			trigger_event = cheateb.1102
 		}
 	}
 	option = {
 		name = cheateb.stewardship
 		scope:actor = {
-			trigger_event = cheateb.1003
+			trigger_event = cheateb.1103
 		}
 	}
 	option = {
 		name = cheateb.intrigue
 		scope:actor = {
-			trigger_event = cheateb.1004
+			trigger_event = cheateb.1104
 		}
 	}
 	option = {
 		name = cheateb.learning
 		scope:actor = {
-			trigger_event = cheateb.1005
+			trigger_event = cheateb.1105
 		}
 	}
 	option = {
 		name = cheateb.prowess
 		scope:actor = {
-			trigger_event = cheateb.1006
+			trigger_event = cheateb.1106
 		}
 	}
 	option = {
 		name = cheateb.return
 		scope:actor = {
-			trigger_event = cheateb.0010
+			trigger_event = cheateb.1000
 		}
 	}
 }
 
-cheateb.1001 = { #diplomacy
+cheateb.1101 = { #diplomacy
 	type = character_event
 	title = cheateb.diplomacy
 	desc = cheateb.null
@@ -84,7 +84,7 @@ cheateb.1001 = { #diplomacy
 			add_diplomacy_skill = 10
 		}
 		scope:actor = {
-			trigger_event = cheateb.1001
+			trigger_event = cheateb.1101
 		}
 	}
 	option = {
@@ -93,7 +93,7 @@ cheateb.1001 = { #diplomacy
 			add_diplomacy_skill = 5
 		}
 		scope:actor = {
-			trigger_event = cheateb.1001
+			trigger_event = cheateb.1101
 		}
 	}
 	option = {
@@ -102,7 +102,7 @@ cheateb.1001 = { #diplomacy
 			add_diplomacy_skill = -5
 		}
 		scope:actor = {
-			trigger_event = cheateb.1001
+			trigger_event = cheateb.1101
 		}
 	}
 	option = {
@@ -111,18 +111,18 @@ cheateb.1001 = { #diplomacy
 			add_diplomacy_skill = -10
 		}
 		scope:actor = {
-			trigger_event = cheateb.1001
+			trigger_event = cheateb.1101
 		}
 	}
 	option = {
 		name = cheateb.return
 		scope:actor = {
-			trigger_event = cheateb.1000
+			trigger_event = cheateb.1100
 		}
 	}
 }
 
-cheateb.1002 = { #martial
+cheateb.1102 = { #martial
 	type = character_event
 	title = cheateb.martial
 	desc = cheateb.null
@@ -138,7 +138,7 @@ cheateb.1002 = { #martial
 			add_martial_skill = 10
 		}
 		scope:actor = {
-			trigger_event = cheateb.1002
+			trigger_event = cheateb.1102
 		}
 	}
 	option = {
@@ -147,7 +147,7 @@ cheateb.1002 = { #martial
 			add_martial_skill = 5
 		}
 		scope:actor = {
-			trigger_event = cheateb.1002
+			trigger_event = cheateb.1102
 		}
 	}
 	option = {
@@ -156,7 +156,7 @@ cheateb.1002 = { #martial
 			add_martial_skill = -5
 		}
 		scope:actor = {
-			trigger_event = cheateb.1002
+			trigger_event = cheateb.1102
 		}
 	}
 	option = {
@@ -165,18 +165,18 @@ cheateb.1002 = { #martial
 			add_martial_skill = -10
 		}
 		scope:actor = {
-			trigger_event = cheateb.1002
+			trigger_event = cheateb.1102
 		}
 	}
 	option = {
 		name = cheateb.return
 		scope:actor = {
-			trigger_event = cheateb.1000
+			trigger_event = cheateb.1100
 		}
 	}
 }
 
-cheateb.1003 = { #stewardship
+cheateb.1103 = { #stewardship
 	type = character_event
 	title = cheateb.stewardship
 	desc = cheateb.null
@@ -192,7 +192,7 @@ cheateb.1003 = { #stewardship
 			add_stewardship_skill = 10
 		}
 		scope:actor = {
-			trigger_event = cheateb.1003
+			trigger_event = cheateb.1103
 		}
 	}
 	option = {
@@ -201,7 +201,7 @@ cheateb.1003 = { #stewardship
 			add_stewardship_skill = 5
 		}
 		scope:actor = {
-			trigger_event = cheateb.1003
+			trigger_event = cheateb.1103
 		}
 	}
 	option = {
@@ -210,7 +210,7 @@ cheateb.1003 = { #stewardship
 			add_stewardship_skill = -5
 		}
 		scope:actor = {
-			trigger_event = cheateb.1003
+			trigger_event = cheateb.1103
 		}
 	}
 	option = {
@@ -219,18 +219,18 @@ cheateb.1003 = { #stewardship
 			add_stewardship_skill = -10
 		}
 		scope:actor = {
-			trigger_event = cheateb.1003
+			trigger_event = cheateb.1103
 		}
 	}
 	option = {
 		name = cheateb.return
 		scope:actor = {
-			trigger_event = cheateb.1000
+			trigger_event = cheateb.1100
 		}
 	}
 }
 
-cheateb.1004 = { #intrigue
+cheateb.1104 = { #intrigue
 	type = character_event
 	title = cheateb.intrigue
 	desc = cheateb.null
@@ -246,7 +246,7 @@ cheateb.1004 = { #intrigue
 			add_intrigue_skill = 10
 		}
 		scope:actor = {
-			trigger_event = cheateb.1004
+			trigger_event = cheateb.1104
 		}
 	}
 	option = {
@@ -255,7 +255,7 @@ cheateb.1004 = { #intrigue
 			add_intrigue_skill = 5
 		}
 		scope:actor = {
-			trigger_event = cheateb.1004
+			trigger_event = cheateb.1104
 		}
 	}
 	option = {
@@ -264,7 +264,7 @@ cheateb.1004 = { #intrigue
 			add_intrigue_skill = -5
 		}
 		scope:actor = {
-			trigger_event = cheateb.1004
+			trigger_event = cheateb.1104
 		}
 	}
 	option = {
@@ -273,18 +273,18 @@ cheateb.1004 = { #intrigue
 			add_intrigue_skill = -10
 		}
 		scope:actor = {
-			trigger_event = cheateb.1004
+			trigger_event = cheateb.1104
 		}
 	}
 	option = {
 		name = cheateb.return
 		scope:actor = {
-			trigger_event = cheateb.1000
+			trigger_event = cheateb.1100
 		}
 	}
 }
 
-cheateb.1005 = { #learning
+cheateb.1105 = { #learning
 	type = character_event
 	title = cheateb.learning
 	desc = cheateb.null
@@ -300,7 +300,7 @@ cheateb.1005 = { #learning
 			add_learning_skill = 10
 		}
 		scope:actor = {
-			trigger_event = cheateb.1005
+			trigger_event = cheateb.1105
 		}
 	}
 	option = {
@@ -309,7 +309,7 @@ cheateb.1005 = { #learning
 			add_learning_skill = 5
 		}
 		scope:actor = {
-			trigger_event = cheateb.1005
+			trigger_event = cheateb.1105
 		}
 	}
 	option = {
@@ -318,7 +318,7 @@ cheateb.1005 = { #learning
 			add_learning_skill = -5
 		}
 		scope:actor = {
-			trigger_event = cheateb.1005
+			trigger_event = cheateb.1105
 		}
 	}
 	option = {
@@ -327,18 +327,18 @@ cheateb.1005 = { #learning
 			add_learning_skill = -10
 		}
 		scope:actor = {
-			trigger_event = cheateb.1005
+			trigger_event = cheateb.1105
 		}
 	}
 	option = {
 		name = cheateb.return
 		scope:actor = {
-			trigger_event = cheateb.1000
+			trigger_event = cheateb.1100
 		}
 	}
 }
 
-cheateb.1006 = { #prowess
+cheateb.1106 = { #prowess
 	type = character_event
 	title = cheateb.prowess
 	desc = cheateb.null
@@ -354,7 +354,7 @@ cheateb.1006 = { #prowess
 			add_prowess_skill = 10
 		}
 		scope:actor = {
-			trigger_event = cheateb.1006
+			trigger_event = cheateb.1106
 		}
 	}
 	option = {
@@ -363,7 +363,7 @@ cheateb.1006 = { #prowess
 			add_prowess_skill = 5
 		}
 		scope:actor = {
-			trigger_event = cheateb.1006
+			trigger_event = cheateb.1106
 		}
 	}
 	option = {
@@ -372,7 +372,7 @@ cheateb.1006 = { #prowess
 			add_prowess_skill = -5
 		}
 		scope:actor = {
-			trigger_event = cheateb.1006
+			trigger_event = cheateb.1106
 		}
 	}
 	option = {
@@ -381,13 +381,13 @@ cheateb.1006 = { #prowess
 			add_prowess_skill = -10
 		}
 		scope:actor = {
-			trigger_event = cheateb.1006
+			trigger_event = cheateb.1106
 		}
 	}
 	option = {
 		name = cheateb.return
 		scope:actor = {
-			trigger_event = cheateb.1000
+			trigger_event = cheateb.1100
 		}
 	}
 }
