@@ -39,6 +39,8 @@
  privateguard:0 "亲卫队"
  privateguard_flavor:0 "有了亲卫兵还需要其他部队吗？"
 
+ innovation_privateguard:0 "亲卫队"
+
 # \modifiers
  cheateb_keep_modifier:0 "备份modifier"
 

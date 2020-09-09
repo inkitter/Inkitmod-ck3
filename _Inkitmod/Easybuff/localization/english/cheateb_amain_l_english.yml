@@ -39,6 +39,8 @@
  privateguard:0 "Bodyguard"
  privateguard_flavor:0 "Any more is needed?"
 
+ innovation_privateguard:0 "Bodyguard"
+
 # \modifiers
  cheateb_keep_modifier:0 "Bakup modifier"
 

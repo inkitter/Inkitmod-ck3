@@ -17,15 +17,15 @@ cheateb.0010 = {
 		}
 	}
 	option = {
-		name = cheateb.5000.dynasty
+		name = cheateb.3000.dynasty
 		scope:actor = {
-			trigger_event = cheateb.5000
+			trigger_event = cheateb.3000
 		}
 	}
 	option = {
-		name = cheateb.6000.county
+		name = cheateb.4000.county
 		scope:actor = {
-			trigger_event = cheateb.6000
+			trigger_event = cheateb.4000
 		}
 	}
 	option = {

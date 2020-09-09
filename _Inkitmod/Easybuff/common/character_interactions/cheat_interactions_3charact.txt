@@ -1,0 +1,70 @@
+﻿cheateb_hook_interaction = {
+	category = cheateb_interaction_menu_relation
+	use_diplomatic_range = no
+	auto_accept = yes
+	ai_will_do = 0
+	
+	on_accept = {
+		cheateb_targetchar_effect = yes
+		scope:cheateb_targetscope = {
+			add_hook = {
+				target = scope:recipient
+				type = loyalty_hook
+			}
+		}
+	}
+}
+
+cheateb_revealsecret_interaction = {
+	category = cheateb_interaction_menu_relation
+	use_diplomatic_range = no
+	auto_accept = yes
+	ai_will_do = 0
+	
+	on_accept = {
+		cheateb_targetchar_effect = yes
+		scope:cheateb_targetscope = {
+			every_secret = {
+				limit = { NOT = { is_known_by = scope:cheateb_targetscope }	}
+				reveal_to = scope:cheateb_targetscope
+			}
+		}
+	}
+}
+
+
+cheateb_addtocourt_interaction = {
+	category = cheateb_interaction_menu_relation
+	use_diplomatic_range = no
+	auto_accept = yes
+	ai_will_do = 0
+
+	on_accept = {
+		cheateb_targetchar_effect = yes
+		scope:cheateb_targetscope = {		
+			add_courtier = scope:recipient
+		}
+	}
+}
+
+cheateb_befriend_interaction = {
+	category = cheateb_interaction_menu_relation
+	use_diplomatic_range = no
+	common_interaction = yes
+	auto_accept = yes
+	ai_will_do = 0
+
+	on_accept = {
+		cheateb_targetchar_effect = yes
+		scope:cheateb_targetscope = {
+			if = {
+				limit = { has_relation_friend = scope:recipient }
+				remove_relation_friend = scope:recipient
+			}
+			else = {
+				set_relation_friend = scope:recipient
+			}
+		}
+	}
+}
+

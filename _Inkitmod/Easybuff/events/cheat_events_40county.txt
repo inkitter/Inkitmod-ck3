@@ -14,7 +14,6 @@ cheateb.4000 = {
 		name = cheateb.4000.privateguard
 		trigger = { scope:recipient = scope:actor }
 		scope:recipient = {
-			unlock_maa = privateguard
 			spawn_army = {
 				levies = 0
 				men_at_arms = {
@@ -25,23 +24,12 @@ cheateb.4000 = {
 				inheritable = yes
 				uses_supply = no
 				name = privateguard
-				
 			}
 		}
-		scope:actor = {
-			trigger_event = cheateb.4000
-		}
-	}
-
-	option = {
-		name = cheateb_development_modifier
-		scope:recipient.county = {
-			if = { 
-				limit = { has_county_modifier = cheateb_development_modifier }
-				remove_county_modifier = cheateb_development_modifier
-			}
-			else = {
-				add_county_modifier = cheateb_development_modifier
+		scope:recipient.culture = {
+			if = {
+				limit = { NOT = { has_innovation = innovation_privateguard} }
+				add_innovation = innovation_privateguard
 			}
 		}
 		scope:actor = {
