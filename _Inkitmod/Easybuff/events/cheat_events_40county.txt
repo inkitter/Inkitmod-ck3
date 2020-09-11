@@ -26,15 +26,7 @@ cheateb.4000 = {
 				name = privateguard
 			}
 		}
-		scope:recipient.culture = {
-			if = {
-				limit = { NOT = { has_innovation = innovation_privateguard} }
-				add_innovation = innovation_privateguard
-			}
-		}
-		scope:actor = {
-			trigger_event = cheateb.4000
-		}
+		scope:actor = { trigger_event = cheateb.4000 }
 	}
 
 	option = {
@@ -51,16 +43,7 @@ cheateb.4000 = {
 		}
 	}
 
-	option = {
-		name = cheateb.4000.addslot
-		scope:recipient.location = {
-			add_building_slot = 1
-		}
-		scope:actor = {
-			trigger_event = cheateb.4000
-		}
-	}
-
+	
 	option = {
 		name = cheateb.4003.switchholding
 		scope:actor = {
@@ -68,7 +51,13 @@ cheateb.4000 = {
 		}
 	}
 
-	
+	option = {
+		name = cheateb.4004.addslot
+		scope:actor = {
+			trigger_event = cheateb.4004
+		}
+	}
+
 
 	option = {
 		name = cheateb.return
@@ -266,6 +255,46 @@ cheateb.4003 = {
 		}
 		scope:actor = {
 			trigger_event = cheateb.4003
+		}
+	}
+
+	option = {
+		name = cheateb.return
+		scope:actor = {
+			trigger_event = cheateb.4000
+		}
+	}
+}
+
+cheateb.4004 = {
+	type = character_event
+	title = cheateb.4004.addslot
+	desc = cheateb.null
+	theme = realm
+	right_portrait = {
+		character = scope:recipient
+		animation = personality_honorable
+	}
+
+	option = {
+		name = cheateb.4004.addslot
+		scope:recipient.location = {
+			add_building_slot = 1
+		}
+		scope:actor = {
+			trigger_event = cheateb.4004
+		}
+	}
+
+	option = {
+		name = cheateb.4004.addslot
+		scope:recipient = {
+			every_directly_owned_province = {
+				add_building_slot = 1
+			}
+		}
+		scope:actor = {
+			trigger_event = cheateb.4004
 		}
 	}
 

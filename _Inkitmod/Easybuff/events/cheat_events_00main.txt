@@ -17,6 +17,12 @@ cheateb.0010 = {
 		}
 	}
 	option = {
+		name = cheateb.2000.house
+		scope:actor = {
+			trigger_event = cheateb.2000
+		}
+	}
+	option = {
 		name = cheateb.3000.dynasty
 		scope:actor = {
 			trigger_event = cheateb.3000

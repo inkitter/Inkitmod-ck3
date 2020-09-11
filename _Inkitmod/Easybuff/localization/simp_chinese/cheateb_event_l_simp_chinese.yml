@@ -35,6 +35,8 @@
  cheateb.1300.modifier:0 "个人调整因素"
  cheateb.1400.lifestyle:0 "生活方式调整"
 
+ cheateb.2000.house:0 "家族调整因素"
+
  cheateb.3000.dynasty:0 "宗族调整因素"
 
  cheateb.4000.county:0 "领地调整因素及政体"
@@ -44,13 +46,13 @@
  cheateb.4002.spawn_female:0 "女性"
  cheateb.4002.spawn_male:0 "男性"
 
- cheateb.4000.addslot:0 "增加建筑位"
-
  cheateb.4003.switchholding:0 "改变领地类型(目标所在地)"
  cheateb.4003.tocastle:0 "城堡"
  cheateb.4003.tochurch:0 "教堂"
  cheateb.4003.tocity:0 "城市"
  cheateb.4003.totribal:0 "部落"
+
+ cheateb.4004.addslot:0 "增加建筑位"
 
  cheateb.7000.culture:0 "文化发明"
  cheateb.7001.maa:0 "文化兵种"

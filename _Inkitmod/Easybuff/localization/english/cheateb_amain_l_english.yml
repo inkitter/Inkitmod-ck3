@@ -41,6 +41,10 @@
 
  innovation_privateguard:0 "Bodyguard"
 
+ cheateb_legacy_track_name:0 "EB Legacy"
+ cheateb_legacy_track_desc:0 "EasyBuff Legacy"
+ cheateb_legacy_1_name:0 "Bodyguard"
+
 # \modifiers
  cheateb_keep_modifier:0 "Bakup modifier"
 

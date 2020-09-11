@@ -1,0 +1,7 @@
+﻿cheateb_legacy_1 = { # Private Army
+	legacy = cheateb_legacy_track
+
+	cost = 10000
+
+	unlock_maa = privateguard
+}

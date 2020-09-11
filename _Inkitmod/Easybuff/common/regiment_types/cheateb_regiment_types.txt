@@ -33,6 +33,6 @@
 	high_maintenance_cost = { gold = 0.5 }
 	
 	stack = 100
-	ai_quality = { value = 0 }
+	ai_quality = { value = -1000 }
 	icon = light_cavalry
 }

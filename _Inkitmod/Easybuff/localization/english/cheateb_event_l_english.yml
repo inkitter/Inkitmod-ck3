@@ -35,6 +35,8 @@
  cheateb.1300.modifier:0 "Char Modifiers"
  cheateb.1400.lifestyle:0 "Lifestyle Points"
 
+ cheateb.2000.house:0 "House Modifiers"
+
  cheateb.3000.dynasty:0 "Dynasty Modifiers"
 
  cheateb.4000.county:0 "County Modifiers and Polity"
@@ -44,13 +46,13 @@
  cheateb.4002.spawn_female:0 "Female"
  cheateb.4002.spawn_male:0 "Male"
 
- cheateb.4000.addslot:0 "Add Building Slot"
-
  cheateb.4003.switchholding:0 "Change Holding Type (Location of target)"
  cheateb.4003.tocastle:0 "Castle"
  cheateb.4003.tochurch:0 "Church"
  cheateb.4003.tocity:0 "City"
  cheateb.4003.totribal:0 "Tribal"
+
+ cheateb.4004.addslot:0 "Add Building Slot"
 
  cheateb.7000.culture:0 "Culture Innovation"
  cheateb.7001.maa:0 "Army"

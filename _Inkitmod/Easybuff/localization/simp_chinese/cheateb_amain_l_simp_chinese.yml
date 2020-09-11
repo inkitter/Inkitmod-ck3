@@ -13,7 +13,7 @@
  cheateb_gold_interaction:0 "@gold_icon! 金币"
  cheateb_prestige_interaction:0 "@prestige_icon! 威望"
  cheateb_piety_interaction:0 "[GetLocalPlayerPietyTextIcon] 虔诚"
- cheateb_dyprestige_interaction:0 "@dynasty_prestige_icon! 家族威望"
+ cheateb_dyprestige_interaction:0 "@dynasty_prestige_icon! 宗族威望"
  
 ## 2
  cheateb_changename_interaction:0 "@skill_diplomacy_icon! 角色#P 改名#!"
@@ -41,6 +41,10 @@
 
  innovation_privateguard:0 "亲卫队"
 
+ cheateb_legacy_track_name:0 "EB传统"
+ cheateb_legacy_track_desc:0 "EasyBuff传统"
+ cheateb_legacy_1_name:0 "亲卫队"
+
 # \modifiers
  cheateb_keep_modifier:0 "备份modifier"
 
@@ -58,3 +62,4 @@
  holy_site_ganzhou_name:0 "甘州"
 
  HEALTH_POINTS_HINT:0 "\n生命值: [CHARACTER.GetHealth|1V]\n生育力: [CHARACTER.GetFertility|%0V]\n压力: [CHARACTER.GetStress|0V]"
+
