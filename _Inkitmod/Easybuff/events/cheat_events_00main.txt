@@ -12,36 +12,24 @@ cheateb.0010 = {
 
 	option = {
 		name = cheateb.1000.charedit
-		scope:actor = {
-			trigger_event = cheateb.1000
-		}
+		scope:actor = { trigger_event = cheateb.1000 }
 	}
 	option = {
 		name = cheateb.2000.house
-		scope:actor = {
-			trigger_event = cheateb.2000
-		}
+		scope:actor = { trigger_event = cheateb.2000 }
 	}
 	option = {
 		name = cheateb.3000.dynasty
-		scope:actor = {
-			trigger_event = cheateb.3000
-		}
+		scope:actor = { trigger_event = cheateb.3000 }
 	}
 	option = {
 		name = cheateb.4000.county
-		scope:actor = {
-			trigger_event = cheateb.4000
-		}
+		scope:actor = { trigger_event = cheateb.4000 }
 	}
 	option = {
 		name = cheateb.7000.culture
-		scope:actor = {
-			trigger_event = cheateb.7000
-		}
+		scope:actor = { trigger_event = cheateb.7000 }
 	}
 
-	option = {
-		name = cheateb.exit
-	}
+	option = { name = cheateb.exit }
 }

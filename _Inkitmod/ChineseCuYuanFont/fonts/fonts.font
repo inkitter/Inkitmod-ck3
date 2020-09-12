@@ -1,6 +1,6 @@
-### Open Sans
+
 fontfiles = {
-	name = "OpenSans-SemiBold"
+	name = "CuYuan"
 	always_load = yes
 
 	group = {
@@ -8,94 +8,6 @@ fontfiles = {
 		files = {"fonts/mapfont/cuyuan_GBK.ttf"}
 	}
 }
-
-fontfiles = {
-	name = "OpenSans-SemiBoldItalic"
-	always_load = yes
-
-	group = {
-		languages = { "l_english" "l_simp_chinese" }
-		files = {"fonts/mapfont/cuyuan_GBK.ttf"}
-	}
-}
-
-fontfiles = {
-	name = "OpenSansCondensed-Bold"
-	always_load = yes
-
-	group = {
-		languages = { "l_english" "l_simp_chinese" }
-		files = {"fonts/mapfont/cuyuan_GBK.ttf"}
-	}
-}
-
-### Gitan
-fontfiles = {
-	name = "Gitan-Regular"
-	always_load = yes
-
-	group = {
-		languages = { "l_english" "l_simp_chinese" }
-		files = {"fonts/mapfont/cuyuan_GBK.ttf"}
-	}
-}
-
-fontfiles = {
-	name = "Gitan-Bold"
-	always_load = yes
-
-	group = {
-		languages = { "l_english" "l_simp_chinese" }
-		files = {"fonts/mapfont/cuyuan_GBK.ttf"}
-	}
-}
-
-fontfiles = {
-	name = "Gitan-Italic"
-	always_load = yes
-
-	group = {
-		languages = { "l_english" "l_simp_chinese" }
-		files = {"fonts/mapfont/cuyuan_GBK.ttf"}
-	}
-
-}
-
-fontfiles = {
-	name = "Gitan-Bold-Italic"
-	always_load = yes
-
-	group = {
-		languages = { "l_english" "l_simp_chinese" }
-		files = {"fonts/mapfont/cuyuan_GBK.ttf"}
-	}
-}
-
-### Fondamento
-fontfiles = {
-	name = "Fondamento-Regular"
-	always_load = yes
-
-	group = {
-		languages = { "l_english" "l_simp_chinese" }
-		files = {"fonts/mapfont/cuyuan_GBK.ttf"}
-	}
-}
-
-### Paradox Kings Script // Missale Lunea custom
-fontfiles = {
-	name = "Paradox_King_Script"
-	always_load = yes
-
-	group = {
-		languages = { "l_english" "l_simp_chinese" }
-		files = { "fonts/mapfont/cuyuan_GBK.ttf" }
-	}
-}
-
-#######################################################################
-#######################################################################
-#######################################################################
 
 # Each font should specify what it is used for.
 # Name fonts after intented usage, not after source file names.
@@ -105,7 +17,7 @@ font = {
 
 	fontstyle = {
 		style = regular
-		fontfiles = "OpenSans-SemiBold"
+		fontfiles = "CuYuan"
 	}
 }
 
@@ -115,22 +27,22 @@ font = {
 
 	fontstyle = {
 		style = regular
-		fontfiles = "Gitan-Regular"
+		fontfiles = "CuYuan"
 	}
 
 	fontstyle = {
 		style = bold
-		fontfiles = "Gitan-Bold"
+		fontfiles = "CuYuan"
 	}
 
 	fontstyle = {
 		style = italic
-		fontfiles = "Gitan-Italic"
+		fontfiles = "CuYuan"
 	}
 
 	fontstyle = {
 		style = bold|italic
-		fontfiles = "Gitan-Bold-Italic"
+		fontfiles = "CuYuan"
 	}
 
 	underlineformats = {
@@ -147,7 +59,7 @@ font = {
 
 	fontstyle = {
 		style = regular
-		fontfiles = "Fondamento-Regular"
+		fontfiles = "CuYuan"
 	}
 }
 
@@ -157,6 +69,6 @@ font = {
 
 	fontstyle = {
 		style = regular
-		fontfiles = "Paradox_King_Script"
+		fontfiles = "CuYuan"
 	}
 }

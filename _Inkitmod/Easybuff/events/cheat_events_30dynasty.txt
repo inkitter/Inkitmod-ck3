@@ -17,13 +17,10 @@ cheateb.3000 = {
 				limit = { has_dynasty_modifier = strong_blood }
 				remove_dynasty_modifier = strong_blood
 			}
-			else = {
-				add_dynasty_modifier = strong_blood
-			}
+			else = { add_dynasty_modifier = strong_blood }
 		}
 		scope:actor = { trigger_event = cheateb.3000 }
 	}
-
 	option = {
 		name = cheateb_stat7_modifier
 		scope:recipient.dynasty = {
@@ -31,13 +28,10 @@ cheateb.3000 = {
 				limit = { has_dynasty_modifier = cheateb_stat7_modifier }
 				remove_dynasty_modifier = cheateb_stat7_modifier
 			}
-			else = {
-				add_dynasty_modifier = cheateb_stat7_modifier
-			}
+			else = { add_dynasty_modifier = cheateb_stat7_modifier }
 		}
 		scope:actor = { trigger_event = cheateb.3000 }
 	}
-
 	option = {
 		name = cheateb_niverdie_modifier
 		scope:recipient.dynasty = {
@@ -45,13 +39,10 @@ cheateb.3000 = {
 				limit = { has_dynasty_modifier = cheateb_niverdie_modifier }
 				remove_dynasty_modifier = cheateb_niverdie_modifier
 			}
-			else = {
-				add_dynasty_modifier = cheateb_niverdie_modifier
-			}
+			else = { add_dynasty_modifier = cheateb_niverdie_modifier }
 		}
 		scope:actor = { trigger_event = cheateb.3000 }
 	}
-
 	option = {
 		name = cheateb_development_modifier
 		scope:recipient.dynasty = {
@@ -59,21 +50,15 @@ cheateb.3000 = {
 				limit = { has_dynasty_modifier = cheateb_development_modifier }
 				remove_dynasty_modifier = cheateb_development_modifier
 			}
-			else = {
-				add_dynasty_modifier = cheateb_development_modifier
-			}
+			else = { add_dynasty_modifier = cheateb_development_modifier }
 		}
 		scope:actor = { trigger_event = cheateb.3000 }
 	}
-
 	option = {
 		name = privateguard
 		scope:recipient.dynasty = { add_dynasty_perk = cheateb_legacy_1 }
 		scope:actor = { trigger_event = cheateb.3000 }
 	}
-
-	
-
 	option = {
 		name = cheateb.return
 		scope:actor = { trigger_event = cheateb.0010 }

@@ -1,6 +1,8 @@
-﻿[h1][b]Easy Buff 2020.9.9[/b][/h1]
+﻿[h1][b]Easy Buff 2020.9.11[/b][/h1]
 
 [h1]Right Click on Characters to Open[/h1]
+
+A cheat mod.
 # Features:
 * Give Coin, Prestige, Piety, Dynasty Prestige to any one.
 * Interactions to any one.
@@ -14,9 +16,10 @@
 * Lifestyle Point.
 * Modifiers on Character, Dynasty and County.
 * Change Polity.
-* Spawn a Powerful Character.
+* Spawn a Powerful Character with relations: brother, sister, son, daughter, etc.
 * Change Holding Type. Castle, Chruch, City or Tribal.
 * Add Building Slot.
+* A New type of Powerful Army.
 
 You can try the font if you like it. https://steamcommunity.com/sharedfiles/filedetails/?id=2222147790
 
@@ -37,8 +40,9 @@ Below for Chinese
 * 生活方式的技能点.
 * 可给人物、家族、领地添加的buff.
 * 修改政体
-* 生成一个强力角色.
+* 生成一个强力角色. 可带有亲缘关系：兄弟、姐妹、儿子、女儿。
 * 改变领地基础类型，城堡、教堂、城市、部落
+* 一种新的可招募部队。
 
 ## 附带了显示生命值的功能。
 

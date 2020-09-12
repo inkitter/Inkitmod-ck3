@@ -28,7 +28,7 @@
 	siege_tier = 4
 	siege_value = 2
 
-	buy_cost = { gold = 10 }
+	buy_cost = { gold = 200 }
 	low_maintenance_cost = { gold = 0.2 }
 	high_maintenance_cost = { gold = 0.5 }
 	

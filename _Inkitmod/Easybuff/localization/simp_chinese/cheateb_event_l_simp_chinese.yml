@@ -45,6 +45,10 @@
  cheateb.4002.spawnchar:0 "生成人物"
  cheateb.4002.spawn_female:0 "女性"
  cheateb.4002.spawn_male:0 "男性"
+ cheateb.4002.spawn_female_house:0 "女性(同父姐妹)"
+ cheateb.4002.spawn_male_house:0 "男性(同父兄弟)"
+ cheateb.4002.spawn_female_house_child:0 "女性(女儿)"
+ cheateb.4002.spawn_male_house_child:0 "男性(儿子)"
 
  cheateb.4003.switchholding:0 "改变领地类型(目标所在地)"
  cheateb.4003.tocastle:0 "城堡"

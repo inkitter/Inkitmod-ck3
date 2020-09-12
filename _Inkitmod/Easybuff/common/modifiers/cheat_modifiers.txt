@@ -71,6 +71,7 @@ cheateb_army_modifier = {
 	movement_speed = 10
 	knight_effectiveness_mult = 1
 	knight_limit = 1
+	
 }
 
 cheateb_development_modifier = {

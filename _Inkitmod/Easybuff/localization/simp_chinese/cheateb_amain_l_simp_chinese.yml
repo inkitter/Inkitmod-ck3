@@ -62,4 +62,3 @@
  holy_site_ganzhou_name:0 "甘州"
 
  HEALTH_POINTS_HINT:0 "\n生命值: [CHARACTER.GetHealth|1V]\n生育力: [CHARACTER.GetFertility|%0V]\n压力: [CHARACTER.GetStress|0V]"
-

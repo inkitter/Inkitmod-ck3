@@ -45,6 +45,10 @@
  cheateb.4002.spawnchar:0 "Spawn Char"
  cheateb.4002.spawn_female:0 "Female"
  cheateb.4002.spawn_male:0 "Male"
+ cheateb.4002.spawn_female_house:0 "Female (Daughter, Same father)"
+ cheateb.4002.spawn_male_house:0 "Male (Brother, Same father)"
+ cheateb.4002.spawn_female_house_child:0 "Female (Daughter)"
+ cheateb.4002.spawn_male_house_child:0 "Male (Son)"
 
  cheateb.4003.switchholding:0 "Change Holding Type (Location of target)"
  cheateb.4003.tocastle:0 "Castle"

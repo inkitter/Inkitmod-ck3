@@ -12,15 +12,11 @@ cheateb.1200 = {
 
 	option = {
 		name = cheateb.1201.trait.education
-		scope:actor = {
-			trigger_event = cheateb.1201
-		}
+		scope:actor = { trigger_event = cheateb.1201 }
 	}
 	option = {
 		name = cheateb.1202.trait.talent
-		scope:actor = {
-			trigger_event = cheateb.1202
-		}
+		scope:actor = { trigger_event = cheateb.1202 }
 	}
 
 	option = {
@@ -59,9 +55,7 @@ cheateb.1200 = {
 			remove_trait = eunuch
 			remove_trait = blind
 		}
-		scope:actor = {
-			trigger_event = cheateb.1200
-		}
+		scope:actor = { trigger_event = cheateb.1200 }
 	}
 
 	option = {
@@ -92,16 +86,12 @@ cheateb.1200 = {
 			remove_trait = sadistic
 			remove_trait = vengeful
 		}
-		scope:actor = {
-			trigger_event = cheateb.1200
-		}
+		scope:actor = { trigger_event = cheateb.1200 }
 	}
 
 	option = {
 		name = cheateb.return
-		scope:actor = {
-			trigger_event = cheateb.1000
-		}
+		scope:actor = { trigger_event = cheateb.1000 }
 	}
 }
 
@@ -123,9 +113,7 @@ cheateb.1201 = {
 			remove_trait = education_diplomacy_2
 			remove_trait = education_diplomacy_1
 		}
-		scope:actor = {
-			trigger_event = cheateb.1201
-		}
+		scope:actor = { trigger_event = cheateb.1201 }
 	}
 	option = {
 		name = trait_education_martial_4
@@ -135,9 +123,7 @@ cheateb.1201 = {
 			remove_trait = education_martial_2
 			remove_trait = education_martial_1
 		}
-		scope:actor = {
-			trigger_event = cheateb.1201
-		}
+		scope:actor = { trigger_event = cheateb.1201 }
 	}
 	option = {
 		name = trait_education_stewardship_4
@@ -147,9 +133,7 @@ cheateb.1201 = {
 			remove_trait = education_stewardship_2
 			remove_trait =education_stewardship_1
 		}
-		scope:actor = {
-			trigger_event = cheateb.1201
-		}
+		scope:actor = { trigger_event = cheateb.1201 }
 	}
 	option = {
 		name = trait_education_intrigue_4
@@ -159,9 +143,7 @@ cheateb.1201 = {
 			remove_trait = education_intrigue_2
 			remove_trait = education_intrigue_1
 		}
-		scope:actor = {
-			trigger_event = cheateb.1201
-		}
+		scope:actor = { trigger_event = cheateb.1201 }
 	}
 	option = {
 		name = trait_education_learning_4
@@ -171,9 +153,7 @@ cheateb.1201 = {
 			remove_trait = education_learning_3
 			add_trait = education_learning_4
 		}
-		scope:actor = {
-			trigger_event = cheateb.1201
-		}
+		scope:actor = { trigger_event = cheateb.1201 }
 	}
 	option = {
 		name = trait_education_martial_prowess_4
@@ -183,9 +163,7 @@ cheateb.1201 = {
 			remove_trait = education_martial_prowess_2
 			remove_trait = education_martial_prowess_1
 		}
-		scope:actor = {
-			trigger_event = cheateb.1201
-		}
+		scope:actor = { trigger_event = cheateb.1201 }
 	}
 	option = {
 		name = trait_blademaster_3
@@ -194,9 +172,7 @@ cheateb.1201 = {
 			remove_trait = blademaster_2
 			remove_trait = blademaster_1
 		}
-		scope:actor = {
-			trigger_event = cheateb.1201
-		}
+		scope:actor = { trigger_event = cheateb.1201 }
 	}
 	option = {
 		name = cheateb.1201.trait.education.remove
@@ -209,16 +185,12 @@ cheateb.1201 = {
 			remove_trait = education_martial_4
 			remove_trait = education_diplomacy_4
 		}
-		scope:actor = {
-			trigger_event = cheateb.1201
-		}
+		scope:actor = { trigger_event = cheateb.1201 }
 	}
 
 	option = {
 		name = cheateb.return
-		scope:actor = {
-			trigger_event = cheateb.1200
-		}
+		scope:actor = { trigger_event = cheateb.1200 }
 	}
 }
 
@@ -235,30 +207,18 @@ cheateb.1202 = {
 
 	option = {
 		name = trait_beauty_good_3
-		scope:recipient = {
-			add_trait = beauty_good_3
-		}
-		scope:actor = {
-			trigger_event = cheateb.1202
-		}
+		scope:recipient = { add_trait = beauty_good_3 }
+		scope:actor = { trigger_event = cheateb.1202 }
 	}
 	option = {
 		name = trait_intellect_good_3
-		scope:recipient = {
-			add_trait = intellect_good_3
-		}
-		scope:actor = {
-			trigger_event = cheateb.1202
-		}
+		scope:recipient = { add_trait = intellect_good_3 }
+		scope:actor = { trigger_event = cheateb.1202 }
 	}
 	option = {
 		name = trait_physique_good_3
-		scope:recipient = {
-			add_trait = physique_good_3
-		}
-		scope:actor = {
-			trigger_event = cheateb.1202
-		}
+		scope:recipient = { add_trait = physique_good_3 }
+		scope:actor = { trigger_event = cheateb.1202 }
 	}
 	option = {
 		name = trait_pure_blooded
@@ -272,9 +232,7 @@ cheateb.1202 = {
 				add_trait = pure_blooded
 			}
 		}
-		scope:actor = {
-			trigger_event = cheateb.1202
-		}
+		scope:actor = { trigger_event = cheateb.1202 }
 	}
 	option = {
 		name = trait_crusader_king
@@ -287,9 +245,7 @@ cheateb.1202 = {
 				add_trait = crusader_king
 			}
 		}
-		scope:actor = {
-			trigger_event = cheateb.1202
-		}
+		scope:actor = { trigger_event = cheateb.1202 }
 	}
 
 	option = {
@@ -323,9 +279,7 @@ cheateb.1202 = {
 			remove_trait = bleeder
 			remove_trait = infertile
 		}
-		scope:actor = {
-			trigger_event = cheateb.1202
-		}
+		scope:actor = { trigger_event = cheateb.1202 }
 	}
 	option = {
 		name = cheateb.1202.trait.talent.removepos
@@ -344,15 +298,11 @@ cheateb.1202 = {
 			remove_trait = strong
 			remove_trait = shrewd
 		}
-		scope:actor = {
-			trigger_event = cheateb.1202
-		}
+		scope:actor = { trigger_event = cheateb.1202 }
 	}
 
 	option = {
 		name = cheateb.return
-		scope:actor = {
-			trigger_event = cheateb.1200
-		}
+		scope:actor = { trigger_event = cheateb.1200 }
 	}
 }
