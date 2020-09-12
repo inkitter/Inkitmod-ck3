@@ -12,7 +12,6 @@ cheateb.4000 = {
 
 	option = {
 		name = cheateb.4000.privateguard
-		trigger = { scope:recipient = scope:actor }
 		scope:recipient = {
 			spawn_army = {
 				levies = 0
@@ -26,6 +25,21 @@ cheateb.4000 = {
 				name = privateguard
 			}
 		}
+		scope:actor = { trigger_event = cheateb.4000 }
+	}
+
+	option = {
+		name = cheateb.4000.taketitle
+		create_title_and_vassal_change = change
+		scope:change = { set_title_and_vassal_change_type = conquest }
+		cheateb_targetchar_effect = yes
+		scope:recipient.location.county = {
+			change_title_holder = {
+				holder = scope:cheateb_targetscope
+				change = scope:change
+			}
+		}
+		resolve_title_and_vassal_change = scope:change
 		scope:actor = { trigger_event = cheateb.4000 }
 	}
 
@@ -49,6 +63,8 @@ cheateb.4000 = {
 		name = cheateb.4004.addslot
 		scope:actor = { trigger_event = cheateb.4004 }
 	}
+
+	
 
 
 	option = {

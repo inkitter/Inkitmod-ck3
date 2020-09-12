@@ -21,6 +21,7 @@
  cheateb_claim_interaction:0 "@pressed_claim! #P 宣称#!头衔"
  cheateb_take_alltitle_interaction:0 "@prestige_icon! #N 夺取#!全部头衔"
  cheateb_take_title_interaction:0 "@prestige_icon! #N 夺取#!头衔"
+ cheateb_take_title_stand_interaction:0 "@prestige_icon! #N 夺取#!头衔(目标所在地)"
  cheateb_religion_interaction:0 "@piety_icon! #P 改变#!宗教"
  cheateb_culture_interaction:0 "@skill_learning_icon! #P 改变#!文化"
  cheateb_kill_interaction:0 "@scheme_icon! #N 杀死#!角色"

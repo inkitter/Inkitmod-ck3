@@ -1,4 +1,4 @@
-﻿[h1][b]Easy Buff 2020.9.11[/b][/h1]
+﻿[h1][b]Easy Buff 2020.9.12[/b][/h1]
 
 [h1]Right Click on Characters to Open[/h1]
 
@@ -6,6 +6,7 @@ A cheat mod.
 # Features:
 * Give Coin, Prestige, Piety, Dynasty Prestige to any one.
 * Interactions to any one.
+* [b]Take any specific title and give to "target" or yourself [b] (the land of interact target stands on: for choosing the specific title.).
 * Rename.
 * [b]Set a target and interact to others.[/b] So you can create more relations between others as you wish.
 * A detailed menu to do more things.
@@ -32,6 +33,7 @@ Below for Chinese
 * 给任何人金币、虔诚、威望和家族威望。
 * 可以与其他人进行关系互动。
 * 可以设置一个目标作为受益者，进行上述互动。这样就可以给其他人之间建立关系了。
+* 获取任意一个伯爵领(需要带军队站在领地上面来确定是哪个领地)
 * 一个事件菜单。
 
 ## 事件菜单的功能

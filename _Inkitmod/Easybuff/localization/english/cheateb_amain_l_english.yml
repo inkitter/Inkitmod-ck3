@@ -21,6 +21,7 @@
  cheateb_claim_interaction:0 "@pressed_claim! #P Claim#! Title"
  cheateb_take_alltitle_interaction:0 "@prestige_icon! #N Take#! All Title "
  cheateb_take_title_interaction:0 "@prestige_icon! #N Take#!Main Title"
+ cheateb_take_title_stand_interaction:0 "@prestige_icon! #N Take#! Title (Target Location)"
  cheateb_religion_interaction:0 "@piety_icon! #P Change#! Religion"
  cheateb_culture_interaction:0 "@skill_learning_icon! #P Change#! Culture"
  cheateb_kill_interaction:0 "@scheme_icon! #N Kill#!"
