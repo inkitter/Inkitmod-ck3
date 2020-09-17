@@ -6,7 +6,7 @@ A cheat mod.
 # Features:
 * Give Coin, Prestige, Piety, Dynasty Prestige to any one.
 * Interactions to any one.
-* [b]Take any specific title and give to "target" or yourself [b] (the land of interact target stands on: for choosing the specific title.).
+* [b]Take any specific title and give to "target" or yourself [/b] (the land of interact target stands on: for choosing the specific title.).
 * Rename.
 * [b]Set a target and interact to others.[/b] So you can create more relations between others as you wish.
 * A detailed menu to do more things.

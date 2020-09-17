@@ -62,4 +62,4 @@
  holy_site_ganzhou_effect_name:0 "EB Religion"
  holy_site_ganzhou_name:0 "GanZhou"
 
- HEALTH_POINTS_HINT:0 "\n生命值: [CHARACTER.GetHealth|1V]\n生育力: [CHARACTER.GetFertility|%0V]\n压力: [CHARACTER.GetStress|0V]"
+ HEALTH_POINTS_HINT:0 "\nHealth: [CHARACTER.GetHealth|1V]\nFertility: [CHARACTER.GetFertility|%0V]\nStress: [CHARACTER.GetStress|0V]"
