@@ -1,4 +1,4 @@
-﻿[h1][b]Easy Buff 2020.9.12[/b][/h1]
+﻿[h1][b]Easy Buff  [v1.1] 2020.9.29[/b][/h1]
 
 [h1]Right Click on Characters to Open[/h1]
 

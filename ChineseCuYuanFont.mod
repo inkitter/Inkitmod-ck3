@@ -5,4 +5,4 @@ tags={
 }
 picture="thumbnail.png"
 name="Chinese Cu Yuan Font "
-supported_version="1.0.*"
+supported_version="1.1.*"
